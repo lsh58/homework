@@ -6,30 +6,7 @@ body{
 article{
     margin: 0 auto;
     position: relative;
-}
-.content{
     padding-top: 79px;
-}
-.content li:nth-child(1){
-    width: 465px;
-    height: 792px;
-    background:url(../img/01.jpg) no-repeat center / cover;
-    margin: 0 auto;
-    visibility: visible;
-}
-.content li:nth-child(2){
-    width: 465px;
-    height: 792px;
-    background:url(../img/02.jpg) no-repeat center / cover;
-    margin: 0 auto;
-    visibility: hidden;
-}
-.content li:nth-child(3){
-    width: 465px;
-    height: 792px;
-    background:url(../img/03.jpg) no-repeat center / cover;
-    margin: 0 auto;
-    visibility: hidden;
 }
 .text{
     position: absolute;
@@ -38,6 +15,7 @@ article{
 }
 .text h2{
     font-size: 83px;
+    visibility: visible;
 }
 .text p{
     width: 260px;
@@ -55,4 +33,19 @@ article{
 }
 .number li:nth-child(1) a{
     font-size:42px;
+}
+.number li:nth-child(1):after{
+    content: '';
+    position: absolute;
+    top: -252px; left: -590px;
+    z-index:-1;
+    width: 465px;
+    height: 792px;
+    background:url(../img/01.jpg) no-repeat center / cover;
+    margin: 0 auto;
+    visibility: visible;
+}
+
+.number:hover + li:after{
+    visibility: hidden;
 }
