@@ -5,7 +5,7 @@ ul,li{
     list-style-type: none;
 }
 a{
-    color:#95979d;
+    color:#000;
     text-decoration: none;
 }
 span,em,strong,a{display: inline-block;}

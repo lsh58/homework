@@ -10,11 +10,26 @@ article{
 .content{
     padding-top: 79px;
 }
-.content li{
+.content li:nth-child(1){
     width: 465px;
     height: 792px;
     background:url(../img/01.jpg) no-repeat center / cover;
     margin: 0 auto;
+    visibility: visible;
+}
+.content li:nth-child(2){
+    width: 465px;
+    height: 792px;
+    background:url(../img/02.jpg) no-repeat center / cover;
+    margin: 0 auto;
+    visibility: hidden;
+}
+.content li:nth-child(3){
+    width: 465px;
+    height: 792px;
+    background:url(../img/03.jpg) no-repeat center / cover;
+    margin: 0 auto;
+    visibility: hidden;
 }
 .text{
     position: absolute;
@@ -38,6 +53,6 @@ article{
     justify-content: space-between;
     align-items: center;
 }
-.number li:first-child{
+.number li:nth-child(1) a{
     font-size:42px;
 }
