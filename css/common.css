@@ -1,6 +1,9 @@
 html,body{
     margin:0px;
 }
+*{
+    color:#bcbcbc;
+}
 ul,li{
     list-style-type: none;
 }

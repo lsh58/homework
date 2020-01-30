@@ -22,30 +22,122 @@ article{
     margin-top: 112px;
 }
 .number{
+    width: 33px;
     height: 305px;
     position: absolute;
     right: calc(50% - 400px);
     top: 322px;
     display: flex;
+    align-items: flex-end;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
-.number li:nth-child(1) a{
+.number1 a{
     font-size:42px;
 }
-.number li:nth-child(1):after{
+.number2 a{
+    margin-top: 0px;
+}
+.number3 a{
+    margin-top: 0px;
+}
+
+.number1 a:after{
     content: '';
+    width: 100px;
+    height: 114px;
+    border-right: 1px solid #000;
     position: absolute;
-    top: -252px; left: -590px;
-    z-index:-1;
+    top: 35px;
+    right: 0;
+}
+.number2 a:after{
+    content: '';
+    width: 100px;
+    height: 0px;
+    border-right: 1px solid #000;
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+.number3 a:after{
+    content: '';
+    width: 100px;
+    height: 0px;
+    border-right: 1px solid #000;
+    position: absolute;
+    top: 180px;
+    right: 0;
+}
+.image1{
+    position: absolute;
+    top: -260px; left:-590px;
+    z-index: -10;
     width: 465px;
     height: 792px;
     background:url(../img/01.jpg) no-repeat center / cover;
-    margin: 0 auto;
-    visibility: visible;
+}
+.image2{
+    position: absolute;
+    top: -260px; left:-590px;
+    z-index: -11;
+    width: 465px;
+    height: 792px;
+    background:url(../img/02.jpg) no-repeat center / cover;
+}
+.image3{
+    position: absolute;
+    top: -260px; left:-590px;
+    z-index: -12;
+    width: 465px;
+    height: 792px;
+    background:url(../img/03.jpg) no-repeat center / cover;
 }
 
-.number:hover + li:after{
-    visibility: hidden;
+/* hover */
+.number1:hover .image1{
+    z-index: -4;
+    transition: .5s
+}
+.number2:hover .image2{
+    z-index: -3;
+    transition: .5s
+}
+.number3:hover .image3{
+    z-index: -2;
+    transition: .5s
+}
+.number:hover .number1 a{
+    font-size:16px;
+    transition: .5s
+}
+
+.change1:hover .number1 a{
+    font-size: 42px;
+    margin-top:0;
+    margin-bottom:142px;
+    transition: .5s;
+}
+.change2:hover .number2 a{
+    font-size: 42px;
+    margin-top:33px;
+    margin-bottom:142px;
+    transition: .5s;
+}
+.change3:hover .number3 a{
+    font-size: 42px;
+    margin-top:33px;
+    margin-bottom:142px;
+    transition: .5s
+}
+.number:hover .number1 a:after{
+    height: 0px;
+    transition: .5s
+}
+.change2:hover .number2 a:after{
+    height: 114px;
+    transition: .5s
+}
+.change3:hover .number3 a:after{
+    height: 114px;
+    transition: .5s
 }
