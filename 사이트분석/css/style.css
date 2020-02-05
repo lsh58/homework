@@ -1,1 +1,85 @@
 @import url('common.css');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/* font-family: 'NanumSquare', sans-serif; */
+
+.clearfix:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+header {
+    width: 1275px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1{
+    margin-left: 14px;
+    padding-top: 25px;
+}
+header nav{
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+}
+header nav a{
+    font-size:22px;
+    font-weight: bold;
+    line-height: 110px;
+    letter-spacing: 0.01em;
+}
+header .login{
+    width: 186px;
+    display: flex;
+    justify-content: space-between;
+}
+header .login a{
+    font-size: 16px;
+    line-height: 110px;
+}
+
+
+/* header */
+
+
+section .visual{
+    margin: 0 auto;
+    height: 851px;
+    background: url(../img/background.jpg) no-repeat center 57% / cover;
+    text-align: center;
+    padding-top: 196px;
+}
+
+section .visual h2{
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+}
+section .visual p{
+    font-size: 26px;
+    color: #fff;
+    padding-top: 30px;
+}
+section .visual .search{
+    padding-top: 63px;
+    position: relative;
+}
+section .visual .search input{
+    width: 868px;
+    height: 73px;
+    outline: none;
+    outline-style: none;
+}
+section .visual .search input::placeholder{
+    font-size: 22px;
+    padding-left: 33px;
+}
+section .visual .search .fa-search{
+    position: absolute;
+    right: 29%;
+    top: 65%;
+    font-size: 24px;
+    color: rgba(0,0,0,0.3);
+}
