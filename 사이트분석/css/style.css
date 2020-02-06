@@ -50,6 +50,10 @@ header .depth{
     height: 171px;
     background: rgba(255,255,255,0.6);
     display: none;
+    position: fixed;
+    top: 110px;
+    z-index: 300;
+    /* z-index적용안됨.. 왜? */
 }
 header:hover .depth{
     display: block;
@@ -180,7 +184,7 @@ section .boardContent .leftbox{
     border-right: 1px solid #aaa;
     display: flex;
 }
-section .boardContent .leftbox img{
+section .boardContent .leftbox a{
     padding: 0 23px;
 }
 section .boardContent .leftbox .text{
@@ -233,3 +237,4 @@ section .boardContent .rightbox ul li a{
 section .boardContent .rightbox ul li p{
     line-height: 46px;
 }
+
