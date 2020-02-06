@@ -21,7 +21,6 @@ header .top{
     display: flex;
     justify-content: space-between;
 }
-
 header .top h1{
     margin-left: 14px;
     padding-top: 25px;
