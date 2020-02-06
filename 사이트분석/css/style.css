@@ -7,54 +7,87 @@
     clear: both;
     display: block;
 }
-
-header {
+header{
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    background: #fff;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+}
+header .top{
     width: 1275px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-header h1{
+header .top h1{
     margin-left: 14px;
     padding-top: 25px;
 }
-header nav{
+header .top nav{
     width: 640px;
     display: flex;
     justify-content: space-between;
 }
-header nav a{
+header .top nav a{
     font-size:22px;
     font-weight: bold;
     line-height: 110px;
     letter-spacing: 0.01em;
 }
-header .login{
+header .top .login{
     width: 186px;
     display: flex;
     justify-content: space-between;
 }
-header .login a{
+header .top .login a{
     font-size: 16px;
     line-height: 110px;
 }
-
-
+header .depth{
+    width: 100%;
+    height: 171px;
+    background: rgba(255,255,255,0.6);
+    display: none;
+}
+header:hover .depth{
+    display: block;
+}
+header .depth .depthMenu{
+    width: 672px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+header .depth ul{
+    height: 171px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .depth .depthMenu ul li a{
+    font-weight: bold;
+    line-height: 57px;
+}
 /* header */
 
-
+section{
+    height: 1267px;
+    background: #eee;
+}
 section .visual{
-    margin: 0 auto;
     height: 851px;
     background: url(../img/background.jpg) no-repeat center 57% / cover;
+    padding-top: 306px;
     text-align: center;
-    padding-top: 196px;
 }
 
 section .visual h2{
     font-size: 60px;
     font-weight: bolder;
+    line-height: 60px;
     color: #fff;
 }
 section .visual p{
@@ -63,23 +96,141 @@ section .visual p{
     padding-top: 30px;
 }
 section .visual .search{
-    padding-top: 63px;
-    position: relative;
-}
-section .visual .search input{
     width: 868px;
     height: 73px;
+    padding-top: 63px;
+    background:#fff;
+    position: relative;
+    margin: 63px auto 0;
+}
+section .visual .search input{
+    width: 838px;
+    height: 73px;
+    position: absolute;
+    left:30px; top: 0;
     outline: none;
     outline-style: none;
+    border: none;
 }
 section .visual .search input::placeholder{
     font-size: 22px;
-    padding-left: 33px;
 }
 section .visual .search .fa-search{
     position: absolute;
-    right: 29%;
-    top: 65%;
+    top: 25px; right: 30px;
     font-size: 24px;
     color: rgba(0,0,0,0.3);
+}
+
+
+section .visual .tagbox ul{
+    width: 440px;
+    margin: 13px auto 0;
+    display: flex;
+    justify-content: space-around;
+}
+section .visual .tagbox li{
+    background: rgba(255,255,255,0.8);
+    margin-left: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+section .visual .tagbox li a{
+    margin: 0 5px;
+}
+section .visual .tagbox li a:before{
+    content: '#';
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+section .board{
+    width: 1275px; height: 451px;
+    background: #fff;
+    margin: -125px auto 0;
+}
+
+section .board nav{
+    display: flex;
+    justify-content: flex-start;
+    background: #354067;
+}
+section .board nav a{
+    display: block;
+    line-height: 72px;
+    font-size: 24px;
+    font-weight: bold;
+    background: #354067;
+    width: 270px;
+    text-align: center;
+    color:#fff;
+}
+section .board nav a.selected{
+    background: #fff;
+    color:#354067;
+}
+
+
+section .boardContent{
+    padding-top: 53px;
+    display: flex;
+}
+section .boardContent .leftbox{
+    border-right: 1px solid #aaa;
+    display: flex;
+}
+section .boardContent .leftbox img{
+    padding: 0 23px;
+}
+section .boardContent .leftbox .text{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section .boardContent .leftbox .text h2{
+    font-size: 22px;
+    font-weight: bolder;
+}
+section .boardContent .leftbox .text p{
+    font-size: 18px;
+}
+p.date{
+    color: #666;
+}
+
+section .boardContent .rightbox{
+    margin: 0 26px;
+    position: relative;
+}
+section .boardContent .rightbox > a{
+    position: absolute;
+    right: 0; top: 0;
+    font-weight: bold;
+}
+section .boardContent .rightbox ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+section .boardContent .rightbox ul li{
+    width: 496px;
+    display: flex;
+    justify-content: space-between;
+}
+section .boardContent .rightbox ul li a{
+    width: 345px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 46px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+section .boardContent .rightbox ul li p{
+    line-height: 46px;
 }
