@@ -126,13 +126,14 @@ section .visual .search{
     margin: 63px auto 0;
 }
 section .visual .search input{
-    width: 838px;
+    width: 780px;
     height: 73px;
     position: absolute;
     left:30px; top: 0;
     outline: none;
     outline-style: none;
     border: none;
+    font-size: 22px;
 }
 section .visual .search input::placeholder{
     font-size: 22px;
@@ -348,6 +349,7 @@ section .boardContent .rightbox ul li p{
 .mainContent .rightbox ul li{
     margin-right:20px ;
 }
+
 .mainContent .leftbox > a:hover{
     opacity: .9;
 }
