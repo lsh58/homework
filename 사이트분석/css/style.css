@@ -14,8 +14,9 @@ header{
     background: #fff;
     top: 0; left: 50%;
     transform: translateX(-50%);
+    z-index: 100;
 }
-header .top{
+.flexbox{
     width: 1275px;
     margin: 0 auto;
     display: flex;
@@ -27,6 +28,7 @@ header .top h1{
 }
 header .top nav{
     width: 640px;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -48,18 +50,17 @@ header .top .login a{
 header .depth{
     width: 100%;
     height: 171px;
-    background: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.8);
     display: none;
     position: fixed;
     top: 110px;
     z-index: 300;
-    /* z-index적용안됨.. 왜? */
 }
 header:hover .depth{
     display: block;
 }
 header .depth .depthMenu{
-    width: 672px;
+    width: 632px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -70,23 +71,41 @@ header .depth ul{
     flex-direction: column;
     align-items: center;
 }
+header .depth .depthMenu ul:nth-child(2){
+    padding-left: 35px;
+}
+header .depth .depthMenu ul:nth-child(3){
+    padding-left: 30px;
+}
+
 header .depth .depthMenu ul li a{
     font-weight: bold;
     line-height: 57px;
 }
 /* header */
-
 section{
-    height: 1267px;
-    background: #eee;
+    width: 100%;
 }
 section .visual{
+    margin: 0 auto;
     height: 851px;
-    background: url(../img/background.jpg) no-repeat center 57% / cover;
+    /* background: url(../img/background.jpg) no-repeat center 57% / cover; */
     padding-top: 306px;
     text-align: center;
+    overflow: hidden;
+    position: relative;
 }
-
+section .visual .fullscreen-bg__video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%;
+    width: 177.77777778vh; 
+    min-width: 100%;
+    min-height: 56.25vw; 100 * 9 / 16 */
+    z-index: -1;
+}
 section .visual h2{
     font-size: 60px;
     font-weight: bolder;
@@ -125,7 +144,6 @@ section .visual .search .fa-search{
     color: rgba(0,0,0,0.3);
 }
 
-
 section .visual .tagbox ul{
     width: 440px;
     margin: 13px auto 0;
@@ -139,6 +157,9 @@ section .visual .tagbox li{
     font-size: 15px;
     font-weight: bold;
 }
+section .visual .tagbox li:hover{
+    background: rgba(255,255,255,1);
+}
 section .visual .tagbox li a{
     margin: 0 5px;
 }
@@ -148,11 +169,19 @@ section .visual .tagbox li a:before{
     font-weight: bold;
 }
 
-
+section .main{
+    width: 100%;
+    height: 451px;
+    background: #eee;
+    margin: 0 auto;
+}
 section .board{
     width: 1275px; height: 451px;
     background: #fff;
-    margin: -125px auto 0;
+    position: relative;
+    top: -125px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 section .board nav{
@@ -168,7 +197,10 @@ section .board nav a{
     background: #354067;
     width: 270px;
     text-align: center;
-    color:#fff;
+    color:rgba(255,255,255,0.8);
+}
+section .board nav a:hover{
+    color:rgba(255,255,255,1);
 }
 section .board nav a.selected{
     background: #fff;
@@ -186,6 +218,9 @@ section .boardContent .leftbox{
 }
 section .boardContent .leftbox a{
     padding: 0 23px;
+}
+section .boardContent .leftbox a img{
+    border: 1px solid #ccc;
 }
 section .boardContent .leftbox .text{
     width: 375px;
@@ -232,9 +267,144 @@ section .boardContent .rightbox ul li a{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    opacity: 0.8;
 }
-
+section .boardContent .rightbox ul li:hover a{
+    opacity:1;
+}
 section .boardContent .rightbox ul li p{
     line-height: 46px;
 }
 
+
+ .mainContent{
+    width: 1275px;
+    margin: 0 auto;
+    padding: 90px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.mainContent .leftbox ul{
+    width: 404px;
+    display: flex;
+    flex-wrap:wrap;
+}
+.mainContent .leftbox ul li{
+    width: 132px; height: 132px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-right: 4px;
+    box-sizing: border-box;
+    margin-bottom:4px;
+    transition: background .5s;
+}
+.mainContent .leftbox ul li:nth-of-type(3n){
+    margin-right: 0;
+}
+.mainContent .leftbox ul li a{
+    width: 132px; height: 132px;
+    padding: 22px 9px;
+    position: relative;
+}
+.mainContent .leftbox ul li a p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.mainContent .leftbox ul li a img:nth-of-type(1){
+    position: absolute;
+    right: 22px; bottom: 9px;
+    visibility: visible;
+}
+.mainContent .leftbox ul li a img:nth-of-type(2){
+    position: absolute;
+    right: 22px; bottom: 9px;
+    visibility: hidden;
+}
+.mainContent .leftbox > a {
+    width: 404px; height: 78px;
+    background: #344066;
+    color:#fff;
+    text-align: center;
+    line-height: 78px;
+    opacity: 1;
+}
+.mainContent .leftbox ul li:hover{
+    background:rgba(0,0,0,0.6);
+}
+.mainContent .leftbox ul li:hover a p{
+    color: #fff;
+}
+.mainContent .leftbox ul li:hover img:nth-of-type(1){
+    visibility: hidden;
+}
+.mainContent .leftbox ul li:hover img:nth-of-type(2){
+    visibility: visible;
+}
+.mainContent .rightbox ul{
+    width: 810px;
+    display: flex;
+    overflow: hidden;
+}
+.mainContent .rightbox ul li{
+    margin-right:20px ;
+}
+.mainContent .leftbox > a:hover{
+    opacity: .9;
+}
+
+.banner{
+    width: 1250px;
+    margin: 20px auto;
+}
+.banner ul{
+    display: flex;
+    justify-content: space-between;
+}
+.banner ul li a img{
+    transform: scale(1) ;
+    transition: .5s;
+}
+.banner ul li:hover a img{
+    transform: scale(1.1) 
+}
+
+footer{width: 100%;}
+footer .foot01{
+    width: 100%;
+    background: #344066;   
+}
+footer .foot01 ul{
+    position: relative;
+}
+footer .foot01 ul li{
+    float: left;
+    margin-right: 30px;
+}
+footer .foot01 ul li a{
+    color: rgba(255,255,255,0.6);
+    line-height: 50px;
+}
+footer .foot01 ul li:hover a{
+    color: rgba(255,255,255, 0.8);
+    line-height: 50px;
+    font-weight: bolder;
+}
+footer .foot01 .flexbox > a{
+    color: #fff;
+    line-height: 50px;
+}
+
+footer .foot02{
+    width: 100%;;
+    background: #415185;
+    padding: 38px 0;
+}
+footer .foot02 .flexbox{
+    display: flex;
+    flex-direction: column;
+}
+footer .foot02 .flexbox p{
+    color: rgba(255,255,255,0.6);
+    font-weight: bold;
+    text-align: center;
+}
