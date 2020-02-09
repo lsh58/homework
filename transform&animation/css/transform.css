@@ -10,7 +10,7 @@ article{
     flex-direction: column;
 }
 
-h1{font-size: 2em; color: #333; padding-bottom: 50px;}
+h1{font-size: 2em; color: #333; padding-bottom: 150px;}
 
 
 
@@ -18,8 +18,8 @@ h1{font-size: 2em; color: #333; padding-bottom: 50px;}
     perspective: 900px;
 }
 .ani_02 .box{
-    height: 300px;width: 300px; 
-    animation: ani_02 32s linear infinite ;
+    height: 100px;width: 100px; 
+    animation: ani_02 16s linear infinite ;
     display: flex;
     transform-style: preserve-3d;
     position: relative;
@@ -31,22 +31,22 @@ h1{font-size: 2em; color: #333; padding-bottom: 50px;}
     /* perspective(900px)  */
 }
 .ani_02 .box div:nth-of-type(1){
-    transform: rotateY(0) translateZ(150px);
+    transform: rotateY(0) translateZ(55px);
 }
 .ani_02 .box div:nth-of-type(2){
-    transform: rotateY(90deg) translateZ(150px);
+    transform: rotateY(90deg) translateZ(55px);
 }
 .ani_02 .box div:nth-of-type(3){
-    transform: rotateY(180deg) translateZ(150px);
+    transform: rotateY(180deg) translateZ(55px);
 }
 .ani_02 .box div:nth-of-type(4){
-    transform: rotateY(270deg) translateZ(150px);
+    transform: rotateY(270deg) translateZ(55px);
 }
 .ani_02 .box div:nth-of-type(5){
-    transform: rotateX(90deg) translateZ(150px);
+    transform: rotateX(90deg) translateZ(55px);
 }
 .ani_02 .box div:nth-of-type(6){
-    transform: rotateX(270deg) translateZ(150px);
+    transform: rotateX(270deg) translateZ(55px);
 }
 .ani_02 .box div:nth-of-type(1) p span{
     background:#f00
@@ -67,50 +67,83 @@ h1{font-size: 2em; color: #333; padding-bottom: 50px;}
     background:#f0f
 }
 .ani_02 .box div p{
-    height: 33%;
+    height: 33.3333%;
     margin-bottom: 0px;
     transition: .5s;
-    animation: ani_03 4s linear infinite ;
+    transform-style: preserve-3d;
+    animation: ani_03 8s linear infinite ;
     font-size: 0;
 }
 .ani_02 .box div p span{
     display: inline-block;
-    width: 33%; height: 100%;
+    width: 33.333%; height: 100%;
     background: #eee;
     text-align: center;
 }
+
 .ani_02 .box div p .long{
-animation: ani_04 4s linear infinite ;
+animation: long 8s linear infinite ;
 transition: 4s;
 }
-
+.ani_02 .box div p .middle{
+    animation: middle 8s linear infinite ;
+    transition: 4s;
+}
+.ani_02 .box div p .short{
+    animation: short 8s linear infinite ;
+    transition: 4s;
+}
 @keyframes ani_02{
     0%{
     }
     100%{
-        transform: rotateY(360deg) rotateX(360deg) ;
+        transform: rotateY(360deg) rotateX(360deg); 
     }
 }
 
 @keyframes ani_03{
-    0%{transform: translatez(-5px)
+    0%,20%{transform: translatez(-5px);
     }
-    50%{
-        transform: translatez(200px)
+    30%,70%{
+        transform: translatez(30px);background: rgba(0,0,0,0.6); 
     }
-    100%{
-        transform: translatez(-5px) ;
+    80%,100%{
+        transform: translatez(-5px) ; 
     }
 }
 
-@keyframes ani_04{
-    0%{opacity: 0;
+@keyframes long{
+    0%{transform: translatez(0px); 
     }
     50%{
-        opacity: 1;
+        transform: translatez(100px); 
     }
     100%{
-        opacity: 0;
+        transform: translatez(0px); 
+    }
+
+}
+
+@keyframes middle{
+    0%{transform: translatez(0px); 
+    }
+    50%{
+        transform: translatez(50px);
+    }
+    100%{
+        transform: translatez(0px);
+    }
+
+}
+
+@keyframes short{
+    0%{transform: translatez(0px);
+    }
+    50%{
+        transform: translatez(30px);
+    }
+    100%{
+        transform: translatez(0px);
     }
 
 }
