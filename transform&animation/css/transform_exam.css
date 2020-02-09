@@ -10,45 +10,84 @@ article{
     flex-direction: column;
 }
 
-h1{font-size: 2em; color: #333; padding-bottom: 200px;}
+h1{font-size: 2em; color: #333; padding-bottom: 100px;}
 
 article div{
-    width: 1200px;
-    height: 100px;
+    width: 500px; height: 500px;
     position: relative;
-    perspective: 600px;
-    transform-style: preserve-3d;
+    padding: 150px 150px;
 }
+
 article div p{
-    width: 700px; height: 360px;
-}
-article div p:nth-of-type(1){
-    background: #d986ff;
+    width: 200px; height: 200px;
+    border-radius: 100%;
+    background: red;
+    animation: spin 10s linear infinite;
     position: absolute;
-    z-index:5;
-    top: -50px;left: -400px;
-    transform-style: preserve-3d;
-    transform: rotateY(45deg) translateZ(-300px);
 }
-article div p:nth-of-type(2){
-    
-    background: #660d57;
+article div p:after{
+    content: '';
+    width: 30px; height: 30px;
+    background:rgba(1,230,10,0.3);
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 100%;
     position: absolute;
-    top: 0;left: 0;
-    z-index:10;
-    transform-style: preserve-3d;
-    transform: rotateY(0) translateZ(0);
-    text-align: center;
-    color: #fff;
-    font-size: 60px;
-    line-height: 350px;
+    top: 250px;
+    left: 250px;
+    animation: spin_itself 4s linear infinite;
 }
-article div p:nth-of-type(3){
-    
-    background: #d986ff;
-    position: absolute;
-    z-index:5;
-    top: -50px;left: 400px;
-    transform-style: preserve-3d;
-    transform: rotateY(-45deg) translateZ(-300px);
+article div p:nth-of-type(1):after{
+    content: '';
+    animation: spin_itself 4s 0.5s linear infinite;
+}
+article div p:nth-of-type(2):after{
+    content: '';
+    animation: spin_itself 4s 1s linear infinite;
+}
+article div p:nth-of-type(3):after{
+    content: '';
+    animation: spin_itself 4s 1.5s linear infinite;
+}
+article div p:nth-of-type(4):after{
+    content: '';
+    animation: spin_itself 4s 2s linear infinite;
+}
+article div p:nth-of-type(5):after{
+    content: '';
+    animation: spin_itself 4s 2.5s linear infinite;
+}
+article div p:nth-of-type(6):after{
+    content: '';
+    animation: spin_itself 4s 3s linear infinite;
+}
+article div p:nth-of-type(7):after{
+    content: '';
+    animation: spin_itself 4s 3.5s linear infinite;
+}
+article div p:nth-of-type(8):after{
+    content: '';
+    animation: spin_itself 4s 4s linear infinite;
+}
+article div p:nth-of-type(9):after{
+    content: '';
+    animation: spin_itself 4s 4.5s linear infinite;
+}
+article div p:nth-of-type(10):after{
+    content: '';
+    animation: spin_itself 4s 5s linear infinite;
+}
+@keyframes spin{
+    0%{transform: rotateZ(0)
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes spin_itself{
+    0%{transform: rotateX(0)
+    }
+    100%{
+        transform: rotateX(360deg) rotateY(360deg)  ;
+    }
 }
