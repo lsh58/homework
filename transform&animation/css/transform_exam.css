@@ -1,6 +1,7 @@
 @import url('common.css');
 
-html,body{height: 100%;}
+html,body{height: 100%;
+background: #000;}
 
 article{
     height: 100%;
@@ -28,7 +29,7 @@ article div p{
 article div p:after{
     content: '';
     width: 30px; height: 30px;
-    background:rgba(1,230,10,0.3);
+    background:rgba(1,220,10,043);
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 100%;
     position: absolute;
