@@ -816,3 +816,147 @@ section .way table thead th:nth-of-type(2):nth-of-type(5){
 }
 
 /* sub5_2 */
+
+section .logjoin{
+    width: 1275px;
+    margin: 0 auto;
+    display: flex;
+}
+section .leftboxlog{
+    width: 50%;
+    height: 900px;
+}
+section .leftboxlog .titleLogin{
+    width: 100%;
+    margin:255px auto 48px;
+}
+section .leftboxlog .titleLogin p{
+    margin:20px 0 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+section .leftboxlog .login{
+    height: 113px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section .leftboxlog .login input:nth-of-type(1){
+    width: 380px;
+    height: 45px;
+    outline: none;
+    outline-style: none;
+    border: 3px solid #344066;
+    font-size: 22px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+section .leftboxlog .login input:nth-of-type(2){
+    width: 380px;
+    height: 45px;
+    outline: none;
+    outline-style: none;
+    border: 3px solid #344066;
+    font-size: 22px;
+    border-radius: 10px;
+    padding-left: 10px
+}
+section .leftboxlog .login input:nth-of-type(3){
+    width: 160px;
+    height: 113px;
+    position: absolute;
+    left:400px; top: 0px;
+    border: none;
+    background: #344066;
+    border-radius: 10px;
+    color: #fff;
+    padding-left: 0;
+}
+section .leftboxlog .login input::placeholder{
+    font-size: 22px;
+}
+section .leftboxlog .idSave{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom:44px;
+}
+section .leftboxlog .idSave input{
+    width: 19px; height: 19px;
+    margin-left: 5px;
+}
+section .leftboxlog .idSave p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+section .leftboxlog p{
+    margin-left: 5px;
+    line-height: 43px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section .rightboxlog{
+    width: 50%;
+}
+section .rightboxlog .titleLogin p{
+    margin:20px 0 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+section .rightboxlog .titleLogin{
+    width: 100%;
+    margin:255px auto 48px;
+}
+section .rightboxlog .join{
+    width: 488px; height: 388px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+section .rightboxlog .join a{
+    width: 488px; height: 92px;
+    background: #344066;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 72px;
+    font-size: 26px;
+    position: relative;
+}
+section .rightboxlog .join a:nth-of-type(1):after{
+    content: '만 14세 이상 내국인';
+    font-size:18px;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}
+section .rightboxlog .join a:nth-of-type(2):after{
+    content: '만 14세 미만 내국인';
+    font-size:18px;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}
+section .rightboxlog .join a:nth-of-type(3):after{
+    content: '한국에 계신 외국인';
+    font-size:18px;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}
+section .rightboxlog .join a:nth-of-type(4):after{
+    content: '사업자 및 공식단체';
+    font-size:18px;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}
