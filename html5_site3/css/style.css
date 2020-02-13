@@ -7,7 +7,7 @@
 
 
 header{
-    width: 100%;
+    width: 16%;
     height: 100%;
     box-shadow: 5px 5px 30px #000;
     position: fixed;
@@ -19,7 +19,7 @@ height: 125px;
 background: #fff url(../images/logo.png) no-repeat center;
 margin: 0;
 }
-header ul{}
+
 header ul li{
     background: linear-gradient(180deg, #2e363a, #333b3f);
     padding-right: 23px;
@@ -29,6 +29,7 @@ header ul li:hover{
     background: linear-gradient(180deg, #30bbb9, #1aa6a4);
 }
 header ul li a{
+    width: 100%;
     text-decoration: none;
     text-decoration-line: none;
     line-height: 62px;
@@ -69,6 +70,68 @@ header dl dd:hover{
     color:#fff;
 }
 
+header .sns{
+    margin-top: 40px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .sns a:nth-of-type(1){
+    width: 24px; height: 24px;
+    margin-right: 4px;
+    background: url(/images/ico.png);
+}
+header .sns a:nth-of-type(2){
+    width: 24px; height: 24px;
+    margin-right: 4px;
+    background: url(/images/ico.png);
+    background-position: -33px 0;
+}
+header .sns a:nth-of-type(3){
+    width: 24px; height: 24px;
+    margin-right: 4px;
+    background: url(/images/ico.png);
+    background-position: -67px 0;
+}
+header .sns a:nth-of-type(4){
+    width: 24px; height: 24px;
+    margin-right: 4px;
+    background: url(/images/ico.png);
+    background-position: -100px 0;
+}
+header .sns a:nth-of-type(5){
+    width: 24px; height: 24px;
+    margin-right: 4px;
+    background: url(/images/ico.png);
+    background-position: -133px 0;
+}
+header .sns a:nth-of-type(6){
+    width: 24px; height: 24px;
+    margin-right: 4px;
+    background: url(/images/ico.png);
+    background-position: -167px 0;
+}
+header .sns a:nth-of-type(7){
+    width: 24px; height: 24px;
+    margin-right: 4px;
+    background: url(/images/ico.png);
+    background-position: -201px 0;
+}
+header p{
+    font-size: 12px;
+    color: #6b7072;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+section{
+    left: 16%;
+}
 section .row figure{
 position: relative;
 padding: 0;
@@ -127,6 +190,27 @@ section .row figure:hover .text{
     opacity: 1;
 }
 
-section figure .text a svg path{
-    fill : #fff
+section figure .text a i{
+    color : #fff;
+    font-size: 18px;
+    margin-top:20px;
+}
+
+
+@media (max-width:992px){
+    header{ height:auto; width:100%;}
+    header ul{
+        display:flex;
+        justify-content: center;
+        background:linear-gradient(to bottom,#333b3f,#2e363a);
+        margin:0 !important;
+    }
+    header ul li{width: 12.5%;
+    padding-right:0}
+    header ul li a{
+        font-size:2vw;
+        text-align: center;
+    }
+    header .sns,dl,p{display:none;}
+    section{width:100%; left:0;}
 }
