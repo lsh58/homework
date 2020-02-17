@@ -1,0 +1,541 @@
+@import url(common.css);
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+@import url('common.css');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/* font-family: 'NanumSquare', sans-serif; */
+
+/** font
+
+font-family: 'NanumSquare', sans-serif
+font-family: 'Nanum Gothic', sans-serif;
+
+**/
+
+
+/********** body **********/
+
+html, body {
+    font-family: 'NanumSquare', sans-serif;
+    color: #333;
+}
+
+/********** header **********/
+
+.clearfix:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+header{
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    background: #fff;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+.flexbox{
+    width: 1275px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+header .top h1{
+    margin-left: 14px;
+    padding-top: 25px;
+}
+header .top nav{
+    width: 640px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+header .top nav a{
+    font-size:22px;
+    font-weight: bold;
+    line-height: 110px;
+    letter-spacing: 0.01em;
+}
+header .top .login{
+    width: 186px;
+    display: flex;
+    justify-content: space-between;
+}
+header .top .login a{
+    font-size: 16px;
+    line-height: 110px;
+}
+header .depth{
+    width: 100%;
+    height: 0px;
+    background: rgba(255,255,255,0.9);
+    position: fixed;
+    top: 110px;
+    z-index: 3;
+    display: none;
+}
+header:hover .depth{
+    display: block;
+    height: 171px;
+    transition: all .3s;
+}
+
+header .depth .depthMenu{
+    width: 632px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+header .depth ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .depth .depthMenu ul:nth-child(2){
+    padding-left: 35px;
+}
+header .depth .depthMenu ul:nth-child(3){
+    padding-left: 30px;
+}
+header .depth .depthMenu ul li a{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 57px;
+    color: rgba(0,0,0,0);
+    position: relative;
+}
+header:hover .depth .depthMenu ul li a{
+    color: #333;
+    transition: .5s;
+}
+header .depth .depthMenu ul li a:after{
+    content:'';
+    border-bottom: 2px solid #666;
+    width: 0%;
+    position: absolute;
+    top: 70%; left: 50%;
+    transition: .5s;
+}
+header .depth .depthMenu ul li a:hover:after{
+    width: 100%;
+    left: 0;
+}
+
+/* header */
+/*************** content ***************/
+
+.content {
+    margin-top: 94px;
+}
+.con .top {
+    height: 300px;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+}
+.con > ul {
+    width: 1272px; margin: 0 auto 109px;
+    display: flex; justify-content: center;
+    border-bottom: 1px solid #858585;
+}
+.con > ul li {
+    width: 33.33%;
+    text-align: center;
+}
+.con > ul li a {
+    padding: 48px 0;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: .8;
+}
+.con > ul li a:hover {
+    opacity: 1;
+}
+.con > ul li a::after {
+    content: "";
+    width: 0%; height: 2px;
+    background: #333;
+    display: block;
+    margin-top: 5px;
+    opacity: 0;
+    transition: .5s;
+}
+.con > ul li a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+
+.con_01 .top {
+    background: url(../img/sub/img_sub01.jpg) no-repeat center;
+}
+.con_01 .main {
+    width: 1277px;
+    margin: 0 auto;
+}
+.con_01 .main_top {
+    width: 100%;
+}
+.con_01 .main_top > div {
+    display: flex;
+    padding-left: 60px;
+}
+.con_01 .main_top > div:last-of-type {
+    margin: 60px 0;
+}
+.con_01 .main_top div span {
+    width: 155px; height: 155px;
+    background: #354067;
+    border-radius: 100%;
+    display: flex; justify-content: center; align-items: center;
+    margin-right: 31px;
+}
+.con_01 .main_top div .text {
+    display: flex; flex-direction: column; justify-content: center;
+}
+.con_01 .main_top div .text p:first-of-type {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 60px;
+}
+.con_01 .main_top div .text p:last-of-type {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    width: 890px;
+}
+
+.con_01 .main .bottom {
+    text-align: center;
+    padding-bottom: 400px;
+}
+.con_01 .main .bottom > p {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+.con_01 .main .bottom ul {
+    width: 100%;
+    display: flex; justify-content: space-between;
+    border: 1px solid #7a7a7a;
+    position: relative;
+}
+.con_01 .main .bottom ul li {
+    width: 33.33%;    
+}
+.con_01 .main .bottom ul li a {
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;    
+    line-height: 50px;
+    background: #e5e5e5;
+    border-right: 1px solid #7a7a7a;
+    transition: .5s;
+}
+.con_01 .main .bottom ul li:last-of-type a {
+    border-right: none;
+}
+.con_01 .main .bottom ul li a:hover {
+    color: #fff;
+    background: #354067;
+    border-right: 1px solid #343848;
+}
+.con_01 .main .bottom ul li .text {
+    width: 100%;
+    display: none; flex-direction: column; align-items: center;
+    position: absolute; left: 0; top: 115px;
+}
+.con_01 .main .bottom ul li:hover .text {
+    display: flex;
+}
+.con_01 .main .bottom ul li .text p:first-of-type {
+    width: 155px; height: 155px;
+    background: #354067;
+    border-radius: 100%;
+    display: flex; justify-content: center; align-items: center;
+    margin-bottom: 35px;
+}
+.con_01 .main .bottom ul li .text p:last-of-type {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+
+.con_02 .top {
+    background: url(../img/sub/img_sub02.jpg) no-repeat center;
+}
+.con_02 .main {
+    width: 999px; margin: 0 auto 150px;
+}
+.con_02 .main ul {
+    width: 100%;
+    background: #354067;
+    border-radius: 50px;
+    display: flex; flex-wrap: wrap;
+    overflow: hidden;
+}
+.con_02 .main ul li {
+    width: 33.333333%; height: 200px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: flex; flex-direction: column; justify-content: flex-end; align-items: center;
+}
+.con_02 .main ul li:nth-of-type(3n) {
+    border-right: 0;
+}
+.con_02 .main ul li:hover {
+    background: #ffd617;
+}
+.con_02 .main ul li > p:last-of-type {
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+    margin: 20px 0 30px;
+}
+.con_02 .main ul li div, .con_02 .main ul li:last-of-type:hover > p {
+    display: none;
+}
+.con_02 .main ul li:last-of-type:hover div {
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+.con_02 .main ul li div p {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+.con_02 .main ul li div p span {
+    color: #f00;
+}
+.con_02 .main ul li div a {
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #000;
+    line-height: 37px;
+    padding: 0 23px;
+    margin: 30px 0;
+}
+
+
+.con_03 .top {
+    background: url(../img/sub/img_sub03.jpg) no-repeat center;
+}
+.con_03 .main {
+    width: 860px;
+    margin: 0 auto;
+}
+
+.con_03 .main > ul {
+    width: 800px; height: 850px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.con_03 .main > ul > li {
+    position: absolute;
+}
+.con_03 .main > ul > li:nth-of-type(1) {
+    left: 0;
+}
+.con_03 .main > ul > li:nth-of-type(2) {
+    left: 100%;
+}
+.con_03 .main > ul > li:nth-of-type(3) {
+    left: 200%;
+}
+.con_03 .main > ul > li > p {
+    width: 232px; height: 232px;
+    margin: 0 auto 100px;
+    background: #354067;
+    border-radius: 100%;   
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    display: flex; justify-content: center; align-items: center;
+}
+.con_03 .main > ul > li .graph {}
+.con_03 .main > ul > li .graph ul {}
+.con_03 .main > ul > li .graph ul li {
+    display: flex; align-items: center;
+    margin-bottom: 100px;
+}
+.con_03 .main > ul > li .graph ul li:last-of-type {
+    margin: 0;
+}
+.con_03 .main > ul > li .graph ul li > p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.con_03 .main > ul > li .graph ul li div {
+    position: relative;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(1) div p:first-of-type {
+    width: 680px; height: 16px;
+    background: #354067;
+    border-radius: 50px;
+    position: relative;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(2) div p:first-of-type {
+    width: 600px; height: 16px;
+    background: #354067;
+    border-radius: 50px;
+    position: relative;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(3) div p:first-of-type {
+    width: 520px; height: 16px;
+    background: #354067;
+    border-radius: 50px;
+    position: relative;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(4) div p:first-of-type {
+    width: 400px; height: 16px;
+    background: #354067;
+    border-radius: 50px;
+    position: relative;
+}
+.con_03 .main > ul > li .graph ul li div p:first-of-type span {
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute; right: 20px; top: 0;
+    transform: translateY(-120%);
+}
+.con_03 .main > ul > li .graph ul li div p:last-of-type {
+    width: 50px; height: 50px;
+    background: #354067;
+    display: flex; justify-content: center; align-items: center;
+    border-radius: 100%;
+    position: absolute; right: -30px; top: -100%;
+}
+.con_03 .main > ul > li .graph ul li div p:last-of-type span {
+    width: 30px; height: 30px;
+    background: #fff;
+    border-radius: 100%;
+}
+
+.con_03 .main > div {
+    display: flex; justify-content: center;
+    margin-bottom: 192px;
+}
+.con_03 .main > div a {
+    margin-right: 15px;
+}
+.con_03 .main > div a:last-of-type {
+    margin: 0;
+}
+.con_03 .main > div a span{
+    display: block;
+}
+.con_03 .main > div a:nth-of-type(1) span {
+    width: 126px; height: 31px;
+    background: #ffd617;
+    border-radius: 100px;
+}
+.con_03 .main > div a:nth-of-type(2) span,
+.con_03 .main > div a:nth-of-type(3) span {
+    width: 31px; height: 31px;
+    background: #354067;
+    border-radius: 100%;
+}
+
+/* footer */
+
+footer{width: 100%;}
+footer .foot01{
+    width: 100%;
+    background: #344066;   
+}
+footer .foot01 ul{
+    position: relative;
+}
+footer .foot01 ul li{
+    float: left;
+    margin-right: 30px;
+}
+footer .foot01 ul li a{
+    color: rgba(255,255,255,0.6);
+    line-height: 50px;
+}
+footer .foot01 ul li:hover a{
+    color: rgba(255,255,255, 0.8);
+    line-height: 50px;
+    font-weight: bolder;
+}
+footer .foot01 .flexbox .dropdown{
+    position: relative;
+}
+footer .foot01 .flexbox .dropdown > a{
+    color: #fff;
+    line-height: 50px;
+}
+
+footer .foot01 .flexbox .dropdown > a em{
+    width: 20px; height: 20px;
+    background: #fff;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin: -3px 0 3px 5px;
+    text-align: center;
+}
+footer .foot01 .flexbox .dropdown > a em i{
+    vertical-align: top;
+    margin-top: 3px;
+}
+footer .foot01 .flexbox .dropdown .pop{
+    width: 177px; height: 237px;
+    background: #fff;
+    border:1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0; left: -5px;
+    display: none;
+    transition: .5s;
+}
+footer .foot01 .flexbox .dropdown .pop a{
+    font-weight: bold;
+    padding-left: 5px;
+    line-height: 30px;
+    color: #666;
+    border-bottom: 1px solid rgba(0,0,0,0.3)
+}
+footer .foot01 .flexbox .dropdown .pop a:last-child{
+    color: #666;
+    line-height: 50px;
+    border-bottom: none;
+}
+footer .foot01 .flexbox .dropdown .pop a em{
+    width: 20px; height: 20px;
+    background: #333;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin: -3px 0 3px 5px;
+    text-align: center;
+}
+footer .foot01 .flexbox .dropdown .pop a em i{
+    color:#fff;
+    vertical-align: top;
+    margin-top: 3px;
+}
+footer .foot01 .flexbox .dropdown:hover .pop{
+    display: flex;
+}
+
+footer .foot02{
+    width: 100%;;
+    background: #415185;
+    padding: 38px 0;
+}
+footer .foot02 .flexbox{
+    display: flex;
+    flex-direction: column;
+}
+footer .foot02 .flexbox p{
+    color: rgba(255,255,255,0.6);
+    font-weight: bold;
+    text-align: center;
+}

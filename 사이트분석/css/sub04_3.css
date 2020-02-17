@@ -1,0 +1,222 @@
+@import url('common.css');
+@import url('common.css');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/* font-family: 'NanumSquare', sans-serif; */
+
+.bottomline{width: 100%;margin-top: 20px; border-bottom: 1px solid #e3e3e3;}
+.topline{width: 100%; margin-bottom: 20px; border-top: 1px solid #e3e3e3;}
+#wrap{margin: 0 auto; overflow: hidden; }   
+
+.clearfix:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+header{
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    background: #fff;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+.flexbox{
+    width: 1275px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+header .top h1{
+    margin-left: 14px;
+    padding-top: 25px;
+}
+header .top nav{
+    width: 640px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+header .top nav a{
+    font-size:22px;
+    font-weight: bold;
+    line-height: 110px;
+    letter-spacing: 0.01em;
+}
+header .top .login{
+    width: 186px;
+    display: flex;
+    justify-content: space-between;
+}
+header .top .login a{
+    font-size: 16px;
+    line-height: 110px;
+}
+header .depth{
+    width: 100%;
+    height: 0px;
+    background: rgba(255,255,255,0.9);
+    position: fixed;
+    top: 110px;
+    z-index: 3;
+    display: none;
+}
+header:hover .depth{
+    display: block;
+    height: 171px;
+    transition: all .3s;
+}
+
+header .depth .depthMenu{
+    width: 632px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+header .depth ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .depth .depthMenu ul:nth-child(2){
+    padding-left: 35px;
+}
+header .depth .depthMenu ul:nth-child(3){
+    padding-left: 30px;
+}
+header .depth .depthMenu ul li a{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 57px;
+    color: rgba(0,0,0,0);
+    position: relative;
+}
+header:hover .depth .depthMenu ul li a{
+    color: #333;
+    transition: .5s;
+}
+header .depth .depthMenu ul li a:after{
+    content:'';
+    border-bottom: 2px solid #666;
+    width: 0%;
+    position: absolute;
+    top: 70%; left: 50%;
+    transition: .5s;
+}
+header .depth .depthMenu ul li a:hover:after{
+    width: 100%;
+    left: 0;
+}
+
+section{width: 1400px; margin: 0 auto;}
+section article{position: relative; display: flex; justify-content: center; align-items: center;}
+section article h2{position: absolute; font-size: 42px; color: black;}
+
+section .maintext{margin: 30px;}
+section .maintext p{margin-bottom: 30px; font-size: 28px; color: chocolate;}
+section .maintext span{font-size: 20px; color: black; margin-bottom: 30px;}
+
+section ul{display: flex;  flex-direction: column;}
+section ul li{}
+section ul li .lank{display: flex; justify-content: center;}
+section ul li .content{width:350px;padding: 10px 0; display: flex; flex-direction: column; align-items: center;}
+section ul li .content img{width: 100%; padding: 20px;}
+
+
+footer{width: 100%;}
+footer .foot01{
+    width: 100%;
+    background: #344066;   
+}
+footer .foot01 ul{
+    position: relative;
+}
+footer .foot01 ul li{
+    float: left;
+    margin-right: 30px;
+}
+footer .foot01 ul li a{
+    color: rgba(255,255,255,0.6);
+    line-height: 50px;
+}
+footer .foot01 ul li:hover a{
+    color: rgba(255,255,255, 0.8);
+    line-height: 50px;
+    font-weight: bolder;
+}
+footer .foot01 .flexbox .dropdown{
+    position: relative;
+}
+footer .foot01 .flexbox .dropdown > a{
+    color: #fff;
+    line-height: 50px;
+}
+
+footer .foot01 .flexbox .dropdown > a em{
+    width: 20px; height: 20px;
+    background: #fff;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin: -3px 0 3px 5px;
+    text-align: center;
+}
+footer .foot01 .flexbox .dropdown > a em i{
+    vertical-align: top;
+    margin-top: 3px;
+}
+footer .foot01 .flexbox .dropdown .pop{
+    width: 177px; height: 237px;
+    background: #fff;
+    border:1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0; left: -5px;
+    display: none;
+    transition: .5s;
+}
+footer .foot01 .flexbox .dropdown .pop a{
+    font-weight: bold;
+    padding-left: 5px;
+    line-height: 30px;
+    color: #666;
+    border-bottom: 1px solid rgba(0,0,0,0.3)
+}
+footer .foot01 .flexbox .dropdown .pop a:last-child{
+    color: #666;
+    line-height: 50px;
+    border-bottom: none;
+}
+footer .foot01 .flexbox .dropdown .pop a em{
+    width: 20px; height: 20px;
+    background: #333;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin: -3px 0 3px 5px;
+    text-align: center;
+}
+footer .foot01 .flexbox .dropdown .pop a em i{
+    color:#fff;
+    vertical-align: top;
+    margin-top: 3px;
+}
+footer .foot01 .flexbox .dropdown:hover .pop{
+    display: flex;
+}
+
+footer .foot02{
+    width: 100%;;
+    background: #415185;
+    padding: 38px 0;
+}
+footer .foot02 .flexbox{
+    display: flex;
+    flex-direction: column;
+}
+footer .foot02 .flexbox p{
+    color: rgba(255,255,255,0.6);
+    font-weight: bold;
+    text-align: center;
+}
