@@ -133,7 +133,11 @@ section .top h2{
     transform: translate(-50%, -50%);
     z-index: 3;
 }
-
+section h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
 section .logjoin{
     width: 1275px;
     margin: 0 auto;
@@ -189,9 +193,10 @@ section .leftboxlog .login input:nth-of-type(3){
     border-radius: 10px;
     color: #fff;
     padding-left: 0;
+    font-size: 23px;
 }
 section .leftboxlog .login input::placeholder{
-    font-size: 22px;
+    font-size: 18px;
 }
 section .leftboxlog .idSave{
     margin-top: 10px;
