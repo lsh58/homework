@@ -15,6 +15,7 @@ header{
     top: 0; left: 50%;
     transform: translateX(-50%);
     z-index: 100;
+    border-bottom: 1px solid #333;
 }
 .flexbox{
     width: 1275px;
@@ -201,7 +202,6 @@ section .main{
     background: #eee;
     margin: 0 auto;
 }
-
 section .board{
     width: 1275px; height: 451px;
     background: #fff;
@@ -381,7 +381,7 @@ section .boardContent .rightbox ul li p{
 .mainContent .rightbox ul li{
     margin-right:20px ;
     position: relative;
-    /* animation: slide 10s linear infinite; */
+    animation: slide 15s linear infinite;
 }
 .mainContent .rightbox ul li:after{
     content: '';
@@ -400,7 +400,7 @@ section .boardContent .rightbox ul li p{
     position: absolute;
     z-index: 3;
     top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -80%);
     color: #fff;
     font-size: 18px;
     font-weight: bolder;
@@ -433,7 +433,7 @@ section .boardContent .rightbox ul li p{
 
 @keyframes slide{
     0%{left: 0;}
-    100%{left: -100%;}
+    100%{left: -135%;}
 }
 
 /* maincontent */
@@ -494,8 +494,12 @@ footer .foot01 .flexbox .dropdown > a em{
     margin: -3px 0 3px 5px;
     text-align: center;
 }
+footer .foot01 .flexbox .dropdown > a em i{
+    vertical-align: top;
+    margin-top: 3px;
+}
 footer .foot01 .flexbox .dropdown .pop{
-    width: 217px; height: 237px;
+    width: 177px; height: 237px;
     background: #fff;
     border:1px solid #333;
     display: flex;
@@ -503,7 +507,7 @@ footer .foot01 .flexbox .dropdown .pop{
     justify-content: space-between;
     position: absolute;
     bottom: 0; left: -5px;
-    opacity: 0;
+    display: none;
     transition: .5s;
 }
 footer .foot01 .flexbox .dropdown .pop a{
@@ -526,12 +530,13 @@ footer .foot01 .flexbox .dropdown .pop a em{
     margin: -3px 0 3px 5px;
     text-align: center;
 }
-footer .foot01 .flexbox .dropdown .pop a em svg path{
-    fill:#fff;
-    
+footer .foot01 .flexbox .dropdown .pop a em i{
+    color:#fff;
+    vertical-align: top;
+    margin-top: 3px;
 }
 footer .foot01 .flexbox .dropdown:hover .pop{
-    opacity: 1;
+    display: flex;
 }
 
 footer .foot02{
@@ -553,8 +558,19 @@ footer .foot02 .flexbox p{
 
 section .top{
     width: 100%; height: 410px;
-    background: url(../img/top5_1.jpg) no-repeat center/ cover;
     position: relative;
+}
+section .sub5_1{
+    background: url(../img/top5_1.jpg) no-repeat center/ cover;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 410px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 section .top h2{
     color: #fff;
@@ -564,8 +580,8 @@ section .top h2{
     position: absolute;
     top: 65%; left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 3;
 }
-
 section .sub5_1content{
     width: 100%;
     padding-top: 140px;
@@ -653,4 +669,316 @@ section .sub5_1content .contact ul{
 section .sub5_1content .contact ul li{
     color:#fff;
     line-height: 40px;
+}
+
+/* sub5_1 */
+
+
+section .sub5_2{
+    background: url(../img/top5_2.jpg) no-repeat center/ cover;
+}
+section .sub5_2content{
+    width: 100%;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+section .title{
+    width: 1275px;
+    margin:55px auto 48px;
+}
+section h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+section .sub5_2content .location{
+    width: 1275px;
+    margin: 0 auto;
+    border-bottom: 1px solid #344066;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+section .sub5_2content .location a{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+section .sub5_2content .location a:after{
+    content: '';
+    width: 0; height: 2px;
+    background: #344066;
+    position: absolute;
+    top:90%; left: 50%;
+    transition: .5s;
+}
+section .sub5_2content .location a:hover:after{
+    width: 100%;
+    left: 0;
+}
+section .sub5_2content .tap{
+    width: 1275px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #666;
+}
+section .sub5_2content .tap a{
+    width: 100%;
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: bold;
+    border-right: 1px solid #666;
+    text-align: center;
+    transition: .5s;
+}
+section .sub5_2content .tap a:last-child{
+    width: 100%;
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: bold;
+    border-right: none;
+}
+section .sub5_2content .tap a:first-child{
+    background: #354067;
+    color: #fff;
+    font-weight: bolder;
+}
+section .sub5_2content .tap a:hover{
+    background: #354067;
+    color: #fff;
+    font-weight: bolder;
+}
+
+section .sub5_2content #map{
+    width: 1275px; height: 444px;
+    margin: 70px auto 0;
+    background: #eee;
+}
+section .sub5_2content .contact{
+    width: 1275px;
+    margin: 0 auto;
+    background: #354067;
+}
+section .sub5_2content .contact ul{
+    display: flex;
+    justify-content: flex-start;
+}
+section .sub5_2content .contact ul li{
+    color:#fff;
+    line-height: 40px;
+    padding: 20px 0 20px 40px;
+}
+section .way{
+    width: 1275px;
+    margin:55px auto 48px;
+}
+section .way h4{
+    margin:50px 0 20px 70px;
+    font-weight: bold;
+    font-size: 20px;
+}
+section .way p{
+    margin-left: 70px;
+    font-weight: bold;
+    font-size: 17px;
+}
+section .way table{
+    border: 1px solid #333;
+    margin: 20px 0 20px 70px;
+    text-align: center;
+    border-collapse: collapse;
+}
+section .way table thead th{
+    background:#eee;
+}
+section .way table th{
+    border: 1px solid #333;
+    padding:5px 10px;
+    font-weight: bold;
+}
+section .way table td{
+    border: 1px solid #333;
+    padding:5px 10px;
+    font-weight: bold;
+}
+section .way table thead th:nth-of-type(-n+6){
+    border: 1px solid #333;
+    padding:5px 70px;
+    font-weight: bold;
+}
+section .way table thead th:nth-of-type(2):nth-of-type(5){
+    border: 1px solid #333;
+    padding:5px 10px;
+    font-weight: bold;
+}
+
+/* sub5_2 */
+
+section .logjoin{
+    width: 1275px;
+    margin: 0 auto;
+    display: flex;
+}
+section .leftboxlog{
+    width: 50%;
+    height: 900px;
+}
+section .leftboxlog .titleLogin{
+    width: 100%;
+    margin:255px auto 48px;
+}
+section .leftboxlog .titleLogin p{
+    margin:20px 0 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+section .leftboxlog .login{
+    height: 113px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section .leftboxlog .login input:nth-of-type(1){
+    width: 380px;
+    height: 45px;
+    outline: none;
+    outline-style: none;
+    border: 3px solid #344066;
+    font-size: 22px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+section .leftboxlog .login input:nth-of-type(2){
+    width: 380px;
+    height: 45px;
+    outline: none;
+    outline-style: none;
+    border: 3px solid #344066;
+    font-size: 22px;
+    border-radius: 10px;
+    padding-left: 10px
+}
+section .leftboxlog .login input:nth-of-type(3){
+    width: 160px;
+    height: 113px;
+    position: absolute;
+    left:400px; top: 0px;
+    border: none;
+    background: #344066;
+    border-radius: 10px;
+    color: #fff;
+    padding-left: 0;
+}
+section .leftboxlog .login input::placeholder{
+    font-size: 22px;
+}
+section .leftboxlog .idSave{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom:44px;
+}
+section .leftboxlog .idSave input{
+    width: 19px; height: 19px;
+    margin-left: 5px;
+}
+section .leftboxlog .idSave p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+section .leftboxlog p{
+    margin-left: 5px;
+    line-height: 43px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section .rightboxlog{
+    width: 50%;
+}
+section .rightboxlog .titleLogin p{
+    margin:20px 0 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+section .rightboxlog .titleLogin{
+    width: 100%;
+    margin:255px auto 48px;
+}
+section .rightboxlog .join{
+    width: 488px; height: 388px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+section .rightboxlog .join a{
+    width: 488px; height: 92px;
+    background: #344066;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 72px;
+    font-size: 26px;
+    position: relative;
+}
+section .rightboxlog .join a:nth-of-type(1):after{
+    content: '만 14세 이상 내국인';
+    font-size:18px;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}
+section .rightboxlog .join a:nth-of-type(2):after{
+    content: '만 14세 미만 내국인';
+    font-size:18px;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}
+section .rightboxlog .join a:nth-of-type(3):after{
+    content: '한국에 계신 외국인';
+    font-size:18px;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}
+section .rightboxlog .join a:nth-of-type(4):after{
+    content: '사업자 및 공식단체';
+    font-size:18px;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+    display:none;
+}
+
+
+@media (max-width:1919px){
+
+}
+
+@media (max-width:1024px){
+    
+}
+
+@media (max-width:768px){
+    
+}
+
+@media (max-width:480px){
+    /* 360~410 */
+   
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
 }

@@ -1,0 +1,385 @@
+@import url('common.css');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/* font-family: 'NanumSquare', sans-serif; */
+
+.clearfix:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+header{
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    background: #fff;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+.flexbox{
+    width: 1275px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+header .top h1{
+    margin-left: 14px;
+    padding-top: 25px;
+}
+header .top nav{
+    width: 640px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+header .top nav a{
+    font-size:22px;
+    font-weight: bold;
+    line-height: 110px;
+    letter-spacing: 0.01em;
+}
+header .top .login{
+    width: 186px;
+    display: flex;
+    justify-content: space-between;
+}
+header .top .login a{
+    font-size: 16px;
+    line-height: 110px;
+}
+header .depth{
+    width: 100%;
+    height: 0px;
+    background: rgba(255,255,255,0.9);
+    position: fixed;
+    top: 110px;
+    z-index: 3;
+    display: none;
+}
+header:hover .depth{
+    display: block;
+    height: 171px;
+    transition: all .3s;
+}
+
+header .depth .depthMenu{
+    width: 632px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+header .depth ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .depth .depthMenu ul:nth-child(2){
+    padding-left: 35px;
+}
+header .depth .depthMenu ul:nth-child(3){
+    padding-left: 30px;
+}
+header .depth .depthMenu ul li a{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 57px;
+    color: rgba(0,0,0,0);
+    position: relative;
+}
+header:hover .depth .depthMenu ul li a{
+    color: #333;
+    transition: .5s;
+}
+header .depth .depthMenu ul li a:after{
+    content:'';
+    border-bottom: 2px solid #666;
+    width: 0%;
+    position: absolute;
+    top: 70%; left: 50%;
+    transition: .5s;
+}
+header .depth .depthMenu ul li a:hover:after{
+    width: 100%;
+    left: 0;
+}
+
+/* header */
+
+section{
+    width: 100%;
+}
+
+section .top{
+    width: 100%; height: 410px;
+    position: relative;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 410px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 65%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+section h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+section .logjoin{
+    width: 1275px;
+    margin: 0 auto;
+    display: flex;
+}
+section .leftboxlog{
+    width: 50%;
+    height: 900px;
+}
+section .leftboxlog .titleLogin{
+    width: 100%;
+    margin:255px auto 48px;
+}
+section .leftboxlog .titleLogin p{
+    margin:20px 0 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+section .leftboxlog .login{
+    height: 113px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section .leftboxlog .login input:nth-of-type(1){
+    width: 380px;
+    height: 45px;
+    outline: none;
+    outline-style: none;
+    border: 3px solid #344066;
+    font-size: 22px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+section .leftboxlog .login input:nth-of-type(2){
+    width: 380px;
+    height: 45px;
+    outline: none;
+    outline-style: none;
+    border: 3px solid #344066;
+    font-size: 22px;
+    border-radius: 10px;
+    padding-left: 10px
+}
+section .leftboxlog .login input:nth-of-type(3){
+    width: 160px;
+    height: 113px;
+    position: absolute;
+    left:400px; top: 0px;
+    border: none;
+    background: #344066;
+    border-radius: 10px;
+    color: #fff;
+    padding-left: 0;
+    font-size: 23px;
+}
+section .leftboxlog .login input::placeholder{
+    font-size: 18px;
+}
+section .leftboxlog .idSave{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom:44px;
+}
+section .leftboxlog .idSave input{
+    width: 19px; height: 19px;
+    margin-left: 5px;
+}
+section .leftboxlog .idSave p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+section .leftboxlog p{
+    margin-left: 5px;
+    line-height: 43px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section .rightboxlog{
+    width: 50%;
+}
+section .rightboxlog .titleLogin p{
+    margin:20px 0 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+section .rightboxlog .titleLogin{
+    width: 100%;
+    margin:255px auto 48px;
+}
+section .rightboxlog .join{
+    width: 488px; height: 388px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+section .rightboxlog .join a{
+    width: 488px; height: 92px;
+    background: #344066;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 72px;
+    font-size: 26px;
+    position: relative;
+}
+section .rightboxlog .join a:nth-of-type(1):after{
+    content: '만 14세 이상 내국인';
+    font-size:18px;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}
+section .rightboxlog .join a:nth-of-type(2):after{
+    content: '만 14세 미만 내국인';
+    font-size:18px;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}
+section .rightboxlog .join a:nth-of-type(3):after{
+    content: '한국에 계신 외국인';
+    font-size:18px;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}
+section .rightboxlog .join a:nth-of-type(4):after{
+    content: '사업자 및 공식단체';
+    font-size:18px;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}
+
+/* login */
+
+footer{width: 100%;}
+footer .foot01{
+    width: 100%;
+    background: #344066;   
+}
+footer .foot01 ul{
+    position: relative;
+}
+footer .foot01 ul li{
+    float: left;
+    margin-right: 30px;
+}
+footer .foot01 ul li a{
+    color: rgba(255,255,255,0.6);
+    line-height: 50px;
+}
+footer .foot01 ul li:hover a{
+    color: rgba(255,255,255, 0.8);
+    line-height: 50px;
+    font-weight: bolder;
+}
+footer .foot01 .flexbox .dropdown{
+    position: relative;
+}
+footer .foot01 .flexbox .dropdown > a{
+    color: #fff;
+    line-height: 50px;
+}
+
+footer .foot01 .flexbox .dropdown > a em{
+    width: 20px; height: 20px;
+    background: #fff;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin: -3px 0 3px 5px;
+    text-align: center;
+}
+footer .foot01 .flexbox .dropdown > a em i{
+    vertical-align: top;
+    margin-top: 3px;
+}
+footer .foot01 .flexbox .dropdown .pop{
+    width: 177px; height: 237px;
+    background: #fff;
+    border:1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0; left: -5px;
+    display: none;
+    transition: .5s;
+}
+footer .foot01 .flexbox .dropdown .pop a{
+    font-weight: bold;
+    padding-left: 5px;
+    line-height: 30px;
+    color: #666;
+    border-bottom: 1px solid rgba(0,0,0,0.3)
+}
+footer .foot01 .flexbox .dropdown .pop a:last-child{
+    color: #666;
+    line-height: 50px;
+    border-bottom: none;
+}
+footer .foot01 .flexbox .dropdown .pop a em{
+    width: 20px; height: 20px;
+    background: #333;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin: -3px 0 3px 5px;
+    text-align: center;
+}
+footer .foot01 .flexbox .dropdown .pop a em i{
+    color:#fff;
+    vertical-align: top;
+    margin-top: 3px;
+}
+footer .foot01 .flexbox .dropdown:hover .pop{
+    display: flex;
+}
+
+footer .foot02{
+    width: 100%;;
+    background: #415185;
+    padding: 38px 0;
+}
+footer .foot02 .flexbox{
+    display: flex;
+    flex-direction: column;
+}
+footer .foot02 .flexbox p{
+    color: rgba(255,255,255,0.6);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* footer */

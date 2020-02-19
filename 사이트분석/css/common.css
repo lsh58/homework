@@ -19,15 +19,7 @@ span,em,strong,a{display: inline-block;}
     line-height: 27px;
     color:#000;
     font-weight: normal;
-    box-sizing:border-box;
-    /*
-        border 또는 padding 넣어주면 
-        width,height값이 변경됨
-    
-        box-sizing:border-box는 이러한 문제점을
-        해결해줌 (width,height 값이 변경 안됨)
-    */
-    
+    box-sizing:border-box;    
 }
 
 
