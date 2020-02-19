@@ -202,7 +202,6 @@ section .main{
     background: #eee;
     margin: 0 auto;
 }
-
 section .board{
     width: 1275px; height: 451px;
     background: #fff;
@@ -382,7 +381,7 @@ section .boardContent .rightbox ul li p{
 .mainContent .rightbox ul li{
     margin-right:20px ;
     position: relative;
-    /* animation: slide 10s linear infinite; */
+    animation: slide 15s linear infinite;
 }
 .mainContent .rightbox ul li:after{
     content: '';
@@ -434,7 +433,7 @@ section .boardContent .rightbox ul li p{
 
 @keyframes slide{
     0%{left: 0;}
-    100%{left: -100%;}
+    100%{left: -135%;}
 }
 
 /* maincontent */
@@ -959,4 +958,27 @@ section .rightboxlog .join a:nth-of-type(4):after{
     top: 60%; left: 50%;
     transform: translateX(-50%);
     line-height: 30px;
+    display:none;
+}
+
+
+@media (max-width:1919px){
+
+}
+
+@media (max-width:1024px){
+    
+}
+
+@media (max-width:768px){
+    
+}
+
+@media (max-width:480px){
+    /* 360~410 */
+   
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
 }
