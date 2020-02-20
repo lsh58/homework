@@ -128,10 +128,9 @@ header .depth .depthMenu ul li a:hover:after{
 
 .content {
     width: 100%;
-    margin-top: 95px;
 }
 .content .title {
-    width: 100%; height: 300px;
+    width: 100%; height: 410px;
     background: url(../img/sub/img_sub04.jpg) no-repeat center / cover;
     display: flex; justify-content: center; align-items: center;
     font-size: 36px;
