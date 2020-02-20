@@ -130,7 +130,7 @@ section .top h2{
     font-weight: bolder;
     letter-spacing: 0.1em;
     position: absolute;
-    top: 65%; left: 50%;
+    top: 60%; left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
 }
