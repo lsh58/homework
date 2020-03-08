@@ -374,63 +374,69 @@ section .board .information ul li a{
 section .lineup{
     box-shadow: rgba(0,0,0,.2) 6px 5px 20px;
 }
-section .lineup .content{
+section .lineup #slide{
     width: 933px;
     margin: 0 auto;
     padding-top: 26px;
     padding-bottom: 220px;
 }
-section .lineup .content strong{
+section .lineup #slide strong{
     font-weight: bold;
     font-size: 1.333rem;
     font-family: 'Noto Sans KR', sans-serif;
     display: inline-block;
 }
-section .lineup .content p{
+section .lineup #slide p{
     display: inline-block;
     font-weight: lighter;
     font-size: 1.2rem;
     font-family: 'Noto Sans KR', sans-serif;
     margin-left: 1px;
 }
-section .lineup .content ul{
+section .lineup #slide ul{
     position: absolute;
-    left: 0%;
+    left: 500%;
     display: flex;
     justify-content: space-between;
 }
-section .lineup .content ul li{
+@keyframes slide{
+    0%{left:0}
+    50%{left}
+    100%
+}
+section .lineup #slide ul li{
     margin-left:10px;
     padding-top: 26px;
     width: 153px;
     height: 150px;
     position: relative;
 }
-section .lineup .content ul li a{
+section .lineup #slide ul li a{
     width: 153px;
     height: 150px;
 }
-section .lineup .content ul li a img{
+section .lineup #slide ul li a img{
     position: absolute;
 }
-section .lineup .content ul li a img:first-child{
+section .lineup #slide ul li a img:first-child{
     z-index: 2;
     opacity: 0;
     transition: 1s;
 }
-section .lineup .content ul li a img:last-child{
+section .lineup #slide ul li a img:last-child{
     z-index: 3;
     opacity: 1;
     transition: 1s;
 }
-section .lineup .content ul li:hover a img:first-child{
+section .lineup #slide ul li:hover a img:first-child{
     z-index: 3;
     opacity: 1;
 }
-section .lineup .content ul li:hover a img:last-child{
+section .lineup #slide ul li:hover a img:last-child{
     z-index: 2;
     opacity: 0;
 }
+
 
 section .video_map{
     width: 933px;
