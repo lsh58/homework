@@ -4,14 +4,12 @@
 /* header */
 
 header{
-    height: 600px; 
-    background: url(/index/img/joey-thompson-4zN_-PKsbWw-unsplash.jpg) no-repeat center 30% / cover;
+    background: url(/index/img/backimg_01.jpg) no-repeat center 30% / cover;
     position: relative;
     box-shadow: rgba(0,0,0,.2) 6px 10px 50px;
+    background-attachment: fixed;
 }
 header .top{
-    width: 100%;
-    height: 600px;
     background: rgba(0,0,0,.5);
 }
 header .top nav{
@@ -25,36 +23,70 @@ header .top nav a{
     margin-right:30px;
     color: #fff;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1rem;
+    position: relative;
 }
+header .top nav a:after{
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0; left:50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: .5s;
+}
+header .top nav a:hover:after{
+    opacity: 1;
+    transform: translate(-50%, -200%);
+}
+
+/* header .top nav a:after{
+    content: '';
+    display: block;
+    width: 130%;
+    height: 20px;
+    background: linear-gradient(90deg, rgb(237, 47, 86), rgb(246, 116, 119));
+    border-radius: 20px;
+    position: absolute;
+    top: 50%; left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 1;
+} */
+/* a를  after위로 올리고 싶은데 ..잘 안된다..  */
+
 header .top .title{
     width: 933px; 
     margin:0 auto;
     padding-top: 70px;
+    color: #fff;
 }
 header .top .title h1{
-    color: #fff;
     font-weight: bold;
-    font-size: 54px;
-    font-family: 'Noto Sans KR', sans-serif;
-    line-height: 60px;
+    font-size: 3rem;
+    line-height: 3.333rem;
+    color:#fff;
 }
 header .top .title p{
-    color: #fff;
-    font-weight: lighter;
-    font-size: 40px;
     font-family: 'Noto Sans KR', sans-serif;
-    line-height: 45px;
+    font-weight: 100;
+    font-size: 2.222rem;
+    padding-bottom: 155px;
+    color:#fff;
 }
-header .top span{
+header .top strong{
     color: #fff;
     font-weight: bold;
-    font-size: 120px;
+    font-size: 5rem;
     font-family: 'Noto Sans KR', sans-serif;
-    line-height: 60px;
     position: absolute;
     top: 50%; left: 60%;
 }
+
 .scroll{
     background: linear-gradient(90deg, rgb(237, 47, 86), rgb(246, 116, 119));
     border-radius: 100%;
@@ -67,6 +99,7 @@ header .top span{
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: ani01 1s 0s infinite ease-in-out;
 }
 .scroll img{
     padding-left: 1px;
@@ -75,11 +108,28 @@ header .top span{
     position: absolute;
     top: 5px;
     transform: scale(0.9);
+    animation: ani02 1s 0s infinite ease-in-out;
 }
 .scroll img:last-child{
     position: absolute;
     top: -5px;
     transform: scale(0.8);
+    animation: ani03 1s 0s infinite ease-in-out;
+}
+@keyframes ani01{
+    0%{margin: -24px auto;}
+    50%{margin: -10px auto;}
+    100%{margin: -24px auto;}
+}
+@keyframes ani02{
+    0%{top:5px}
+    50%{top: 10px;}
+    100%{top: 5px;}
+}
+@keyframes ani03{
+    0%{top:-5px}
+    50%{top: 0px;}
+    100%{top: -5px;}
 }
 /* header-end */
 
@@ -92,7 +142,7 @@ section .banner{
 }
 section .banner div{
     width: 303px;
-    height: 182px;
+    height: 181px;
     border-radius: 20px;
     box-shadow: rgba(0,0,0,.2) 6px 5px 20px;
     position: relative;
@@ -110,14 +160,14 @@ section .banner div:after{
     opacity: 0;
 }
 section .banner div a{
-    width: 303px;
-    height: 182px;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     color: #fff;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.556rem;
     font-family: 'Noto Sans KR', sans-serif;
-    line-height: 30px;
+    line-height: 1.667rem;
     position: absolute;
     top: 50%; left: 50%;
     z-index: 3;
@@ -131,17 +181,19 @@ section .banner div a strong{
     top: 50%; left: 50%;
     z-index: 3;
     transform: translate(-50%, -60%);
+    color: #fff;
 }
 section .banner div a p{
     letter-spacing: 0.1rem;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 1rem;
     font-family: 'Noto Sans KR', sans-serif;
-    line-height: 30px;
+    line-height: 1.667rem;
     position: absolute;
     top: 70%; left: 50%;
     z-index: 3;
     transform: translate(-50%, 0);
+    color: #fff;
 }
 section .banner div:hover:after{
     opacity: 1;
@@ -152,6 +204,7 @@ section .banner div:hover a{
 section .banner div img{
     border-radius: 20px;
 }
+
 section .ticket{
     width: 933px;
     margin: 0px auto;
@@ -159,123 +212,99 @@ section .ticket{
     flex-direction: column;
     align-items: center;
 }
-section .ticket span{
+/* section .ticket span{
     width: 2px;
     height: 41px;
     background: linear-gradient(90deg, rgb(237, 47, 86), rgb(246, 116, 119));
     margin: 0 auto;
-}
+} */
 section .ticket p{
     font-weight: lighter;
-    font-size: 30px;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.667rem;
     color: #f15166;
-    margin: 10px 0 5px;
+    margin: 10px 0 8px;
 }
 section .ticket strong{
     font-weight: bold;
     letter-spacing: 0.05rem;
-    font-size: 17px;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
     color: #f15166;
 }
+
 section .ticket .btn{
-    width: 180px;
-    height: 40px;
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
-    background: linear-gradient(90deg, rgb(237, 47, 86), rgb(246, 116, 119));
+    /* background: linear-gradient(90deg, rgb(237, 47, 86), rgb(246, 116, 119)); */
     position: relative;
-}
-section .ticket .btn:after{
-    content: '';
-    width: 180px;
-    height: 40px;
-    background: rgba(237, 47, 86, .5);
-    position: absolute;
-    z-index: -1;
-    top: 5px; left: 5px;
-    opacity: 0;
-    transition: .5s;
-}
-section .ticket .btn:hover:after{
-    opacity: 1;
 }
 section .ticket .btn a{
     display: block;
-    width: 180px;
-    height: 27px;
-    color: #fff;
+    width: 100%;
+    color: #f14e65;
     font-weight: bold;
-    font-size: 18px;
-    padding-top: 13px;
+    font-size: 1.2rem;
+    border-top: 3px solid #f14e65;
+    border-bottom: 3px solid #f14e65;
+    padding: 8px 5px;
+    letter-spacing: .1rem;
+    transition: .3s;
 }
+section .ticket .btn a:hover{
+    letter-spacing: .3rem;
+}
+
 section .board{
     width: 933px;
     margin: 50px auto;
     display: flex;
     justify-content: space-between;
 }
-section .board .notice{
+section .board>div{
     width: 452px;
-    height: 284px;
     box-shadow: rgba(0,0,0,.2) 6px 5px 20px;
     position: relative;
-}
-section .board .information{
-    width: 452px;
-    height: 284px;
-    box-shadow: rgba(0,0,0,.2) 6px 5px 20px;
-    position: relative;
+    padding-bottom: 26px;
 }
 section .board div:after{
     content: '';
-    width: 451px;
-    height: 284px;
+    width: 100%;
+    height: 100%;
     border: 2px solid #f14e65;
     position: absolute;
     z-index: -1;
     top: 0; left: 0;
     opacity: 0;
-    transition: .8s;
+    transition: .5s;
 }
 section .board div:hover:after{
     opacity: 1;
 }
-
 section .board div .top{
-    width: 411px;
-    margin: 0 auto;
     padding-top: 26px;
+    padding-left: 25px;
     display: flex;
     justify-content: flex-start;
 }
 section .board div .top strong{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: 'Noto Sans KR', sans-serif;
-    color: #111;
 }
 section .board div .top p{
     font-weight: lighter;
-    font-size: 18px;
+    padding-top: 4px;
+    font-size: 1.1rem;
     font-family: 'Noto Sans KR', sans-serif;
-    color: #111;
     margin-left: 5px;
 }
-section .board .notice .top a{
+section .board div .top a{
     width: 16px;
     height: 16px;
     padding-top: 10px;
     margin-left: 250px;
-    position: relative;
 }
 section .board .information .top a{
-    width: 16px;
-    height: 16px;
-    padding-top: 10px;
     margin-left: 210px;
-    position: relative;
 }
 section .board div .top span{
     display: block;
@@ -291,64 +320,82 @@ section .board div .top span:last-child{
 }
 section .board div ul{
     width: 411px;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 section .board div ul li{
-    padding-bottom: 10px;
+    padding-bottom: 13px;
 }
 section .board div ul li a{
-    font-size: 18px;
-    color: #111;
+    font-size: 1rem;
     margin-left: 5px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 300;
     letter-spacing: 0.05rem;
+    position: relative;
+}
+section .board div ul li .select:after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #f15166;
+    border-radius: 100%;
+    position: absolute;
+    top: 20px; right: -12px;
+    opacity: 0;
+    transition: .3s; 
+}
+section .board div ul li .select:hover:after{
+    opacity: 1;
+    top: 10px;
 }
 section .board div ul li .pink{
-    font-size: 18px;
+    letter-spacing: 0;
+    font-size: 1.1rem;
     font-weight: bold;
     color: #f14e65;
     margin-left: 0;
 }
 section .board div ul li .blue{
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: bold;
     color: #4075c5;
     margin-left: 0;
 }
+
 section .board .information ul li{
     padding-bottom: 15px;
+    text-align: center;
 }
 section .board .information ul li a{
     font-weight: normal;
 }
+
+
 section .lineup{
-    width: 100%;
-    height: 250px;
     box-shadow: rgba(0,0,0,.2) 6px 5px 20px;
 }
 section .lineup .content{
     width: 933px;
     margin: 0 auto;
     padding-top: 26px;
+    padding-bottom: 220px;
 }
 section .lineup .content strong{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.333rem;
     font-family: 'Noto Sans KR', sans-serif;
-    color: #111;
     display: inline-block;
 }
 section .lineup .content p{
     display: inline-block;
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-family: 'Noto Sans KR', sans-serif;
-    color: #111;
     margin-left: 1px;
 }
 section .lineup .content ul{
     position: absolute;
+    left: 0%;
     display: flex;
     justify-content: space-between;
 }
@@ -387,9 +434,9 @@ section .lineup .content ul li:hover a img:last-child{
 
 section .video_map{
     width: 933px;
-    height: 430px;
     margin: 50px auto;
     position: relative;
+    overflow: hidden;
 }
 section .video_map .video{
     width: 649px;
@@ -404,8 +451,6 @@ section .video_map .video a img:first-child{
     top: 50%; left: 50%;
     z-index: 1;
     transform: translate(-50%, -50%);
-    width: 649px;
-    height: 419px;
     border-radius: 20px;
     filter: blur(3px);
     transition: .5s;
@@ -414,8 +459,8 @@ section .video_map .video:hover a img:first-child{
     filter: blur(0);
 }
 section .video_map .video a{
-    width: 649px;
-    height: 419px;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     position: absolute;
     top: 50%; left: 50%;
@@ -425,8 +470,8 @@ section .video_map .video a{
 }
 section .video_map .video a:after{
     content: '';
-    width: 649px;
-    height: 419px;
+    width: 100%;
+    height: 100%;
     background:rgba(0,0,0,.6);
     border-radius: 20px;
     position: absolute;
@@ -452,17 +497,18 @@ section .video_map .map .see_map{
     border-radius: 20px;
     box-shadow: rgba(0,0,0,.2) 6px 5px 20px;
     position: relative;
+    overflow: hidden;
 }
 
 section .video_map .map .see_map a{
-    width: 258px;
-    height: 257px;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     color: #fff;
     font-weight: bold;
     font-size: 28px;
     font-family: 'Noto Sans KR', sans-serif;
-    line-height: 30px;
+    line-height: 1.667rem;
     position: absolute;
     top: 50%; left: 50%;
     z-index: 3;
@@ -473,19 +519,20 @@ section .video_map .map .see_map strong{
     position: absolute;
     top: 50%; left: 50%;
     z-index: 3;
+    color: #fff;
     transform: translate(-50%, -50%);
 }
 section .video_map .map .see_map p{
     color: #fff;
     letter-spacing: 0.1rem;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-family: 'Noto Sans KR', sans-serif;
 }
 section .video_map .map .see_map:after{
     content: '';
-    width: 258px;
-    height: 257px;
+    width: 100%;
+    height: 100%;
     background:rgba(0,0,0,.6);
     border-radius: 20px;
     position: absolute;
@@ -497,10 +544,14 @@ section .video_map .map .see_map img{
     position: absolute;
     top: 50%; left: 50%;
     z-index: 1;
-    transform: translate(-50%, -50%);
-    width: 258px;
-    height: 257px;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
+    transition: .5s;
+}
+section .video_map .map .see_map:hover img{
+    transform: translate(-50%, -50%) scale(1.2);
 }
 
 section .video_map .map .location{
@@ -513,14 +564,14 @@ section .video_map .map .location{
     margin-top: 8px;
 }
 section .video_map .map .location a{
-    width: 258px;
-    height: 154px;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     color: #fff;
     font-weight: bold;
     font-size: 28px;
     font-family: 'Noto Sans KR', sans-serif;
-    line-height: 30px;
+    line-height: 1.667rem;
     position: absolute;
     top: 50%; left: 50%;
     z-index: 3;
@@ -529,17 +580,19 @@ section .video_map .map .location a{
     transition: .5s;
 }
 section .video_map .map .location a strong{
+    color: #fff;
     position: absolute;
     top: 30%; left: 10%;
     z-index: 3;
     transform: translate(0, 0);
 }
 section .video_map .map .location a p{
+    color: #fff;
     letter-spacing: 0.1rem;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-family: 'Noto Sans KR', sans-serif;
-    line-height: 30px;
+    line-height: 1.667rem;
     position: absolute;
     top: 100%; left: 0;
     z-index: 3;
@@ -551,16 +604,15 @@ section .video_map .map .location img{
     padding-top: 38px;
     padding-right: 30px;
 }
+
 /* section-end */
 
 /* footer */
 footer{
-    height: 109px;
     box-shadow: rgba(0,0,0,.2) 6px 5px 20px;
-
 }
 footer .content{
-    padding-top: 30px;
+    padding: 30px 0;
     width: 933px;
     display: flex;
     justify-content: space-between;

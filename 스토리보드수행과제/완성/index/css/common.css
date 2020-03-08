@@ -23,7 +23,8 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 18px;
+  color: #111;
   font: inherit;
   vertical-align: baseline;
   font-family: 'Noto Sans', sans-serif;
@@ -52,5 +53,6 @@ table {
   border-spacing: 0;
 }
 a{
+  
   text-decoration: none;
 }
