@@ -32,3 +32,33 @@ function showSlides() {
 setInterval(showSlides, 3000);
 
 //배경변경 end
+
+// 비디오
+
+var video = document.getElementById("video");
+var play = document.getElementById("playbtn");
+var pause = document.getElementById("pausebtn");
+
+function playPause() {
+    if (video.paused) {
+        video.play();
+        play.style.opacity = 0;
+        pause.style.opacity = 1;
+    } else {
+        video.pause();
+        play.style.opacity = 1;
+        pause.style.opacity = 0;
+    }
+}
+
+play.addEventListener("click", function(e) {
+    e.preventDefault();
+    playPause();
+}); //재생
+
+pause.addEventListener("click", function(e) {
+    e.preventDefault();
+    playPause();
+}); //일시정지
+
+//비디오 end

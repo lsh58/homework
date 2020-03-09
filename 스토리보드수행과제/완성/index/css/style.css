@@ -483,9 +483,19 @@ section .video_map .video{
     border-radius: 20px;
     box-shadow: rgba(0,0,0,.2) 6px 5px 20px;
     position: relative;
+    overflow: hidden;
     float: left;
 }
-section .video_map .video a img:first-child{
+#video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 100%;
+    z-index: -1;
+}
+/* section .video_map .video a img:first-child{
     position: absolute;
     top: 50%; left: 50%;
     z-index: 1;
@@ -496,8 +506,8 @@ section .video_map .video a img:first-child{
 }
 section .video_map .video:hover a img:first-child{
     filter: blur(0);
-}
-section .video_map .video a{
+} */
+section .video_map .video #playbtn{
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -506,24 +516,40 @@ section .video_map .video a{
     z-index: 3;
     transform: translate(-50%, -50%);
     text-align: center;
+    opacity: 1;
+    transition: opacity .5s;
+}
+section .video_map .video #pausedbtn{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%; left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity .5s;
 }
 section .video_map .video a:after{
     content: '';
     width: 100%;
     height: 100%;
-    background:rgba(0,0,0,.6);
+    background:rgba(0,0,0,.1);
     border-radius: 20px;
     position: absolute;
     top: 50%; left: 50%;
     z-index: 2;
     transform: translate(-50%, -50%);
 }
-section .video_map .video a img:last-child{
+section .video_map .video a img{
     position: absolute;
     top: 50%; left: 50%;
     z-index: 3;
     transform: translate(-50%, -50%);
 }
+
+
 section .video_map .map{
     float: right;
     display: flex;
@@ -587,7 +613,7 @@ section .video_map .map .see_map img{
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    transition: .5s;
+    transition: transform .5s;
 }
 section .video_map .map .see_map:hover img{
     transform: translate(-50%, -50%) scale(1.2);
@@ -616,7 +642,6 @@ section .video_map .map .location a{
     z-index: 3;
     transform: translate(-50%, -50%);
     text-align: center;
-    transition: .5s;
 }
 section .video_map .map .location a strong{
     color: #fff;
