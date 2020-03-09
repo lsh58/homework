@@ -4,7 +4,7 @@
 /* header */
 
 header{
-    background: url(/index/img/backimg_01.jpg) no-repeat center 30% / cover;
+    background: url("../img/backimg_01.jpg") no-repeat center 80% / cover;
     position: relative;
     box-shadow: rgba(0,0,0,.2) 6px 10px 50px;
     background-attachment: fixed;
@@ -21,12 +21,12 @@ header .top nav{
 }
 header .top nav a{
     margin-right:30px;
-    color: #fff;
+    color: transparent;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: relative;
 }
-header .top nav a:after{
+/* header .top nav a:after{
     content: '';
     display: block;
     width: 5px;
@@ -34,31 +34,50 @@ header .top nav a:after{
     border-radius: 100%;
     background: #fff;
     position: absolute;
-    top: 0; left:50%;
+    top: 0; left:50%;0
     transform: translate(-50%, 0);
+    opacity: 0;
+    transition: .5s;
+} */
+header .top nav a:after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 120%;
+    background: linear-gradient(90deg, rgb(237, 47, 86), rgb(246, 116, 119));
+    border-radius: 10px;
+    position: absolute;
+    top: 50%; left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
     opacity: 0;
     transition: .5s;
 }
 header .top nav a:hover:after{
+    width: 100%;
     opacity: 1;
-    transform: translate(-50%, -200%);
 }
-
-/* header .top nav a:after{
-    content: '';
-    display: block;
-    width: 130%;
-    height: 20px;
-    background: linear-gradient(90deg, rgb(237, 47, 86), rgb(246, 116, 119));
-    border-radius: 20px;
+header .top nav a:before{
+    content:attr(data-text);
+    width:100%; height:100%;
     position: absolute;
     top: 50%; left:50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    opacity: 1;
-} */
-/* a를  after위로 올리고 싶은데 ..잘 안된다..  */
-
+    transform: translate(-37%, -37%);
+    z-index:2;
+    font-size: 1.1rem;
+    color:#fff;
+    animation: none;
+}
+header .top nav a:hover:before{
+    animation: wobble 2s forwards;
+}
+@keyframes wobble { 
+    0% { transform: translate(-37%, -37%); } 
+    25% { transform: translate(-37%, -48%) } 
+    50% { transform: translate(-37%, -37%) } 
+    75% { transform: translate(-37%, -48%) } 
+    100% { transform: translate(-37%, -37%); } 
+ }
 header .top .title{
     width: 933px; 
     margin:0 auto;
@@ -75,7 +94,8 @@ header .top .title p{
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 100;
     font-size: 2.222rem;
-    padding-bottom: 155px;
+    padding-bottom: 145px;
+    padding-top: 10px;
     color:#fff;
 }
 header .top strong{
@@ -190,7 +210,7 @@ section .banner div a p{
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.667rem;
     position: absolute;
-    top: 70%; left: 50%;
+    top: 90%; left: 50%;
     z-index: 3;
     transform: translate(-50%, 0);
     color: #fff;
@@ -263,7 +283,7 @@ section .board>div{
     width: 452px;
     box-shadow: rgba(0,0,0,.2) 6px 5px 20px;
     position: relative;
-    padding-bottom: 26px;
+    padding-bottom: 0px;
 }
 section .board div:after{
     content: '';
@@ -318,14 +338,14 @@ section .board div .top span:first-child{
 section .board div .top span:last-child{
     transform: rotate(90deg);
 }
-section .board div ul{
+section .board .notice ul{
     width: 411px;
     margin: 10px auto;
 }
 section .board div ul li{
     padding-bottom: 13px;
 }
-section .board div ul li a{
+section .board .notice ul li a{
     font-size: 1rem;
     margin-left: 5px;
     font-family: 'Noto Sans KR', sans-serif;
@@ -361,18 +381,29 @@ section .board div ul li .blue{
     color: #4075c5;
     margin-left: 0;
 }
-
+section .board .information ul{
+    width: 411px;
+    margin: 20px auto;
+}
 section .board .information ul li{
     padding-bottom: 15px;
     text-align: center;
 }
 section .board .information ul li a{
-    font-weight: normal;
+    margin-left: 5px;
+    letter-spacing: 0rem;
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 
 section .lineup{
+    width: 100%;
     box-shadow: rgba(0,0,0,.2) 6px 5px 20px;
+    position: relative;
+    overflow: hidden;
 }
 section .lineup div{
     width: 933px;
@@ -398,7 +429,7 @@ section .lineup div #slide{
     left: 0%;
     display: flex;
     justify-content: space-between;
-    animation: slide 30s 0s infinite linear;
+    animation: slide 60s 0s infinite linear;
 }
 @keyframes slide{
     0%{left:0%}
@@ -610,7 +641,18 @@ section .video_map .map .location img{
     height: 62px;
     padding-top: 38px;
     padding-right: 30px;
+    animation: none;
 }
+section .video_map .map .location:hover img{
+    animation: wobble2 2s infinite;
+}
+@keyframes wobble2 { 
+    0% { } 
+    25% { transform: rotate(-5deg); transform-origin: 30px -50px;} 
+    50% { transform: rotate(5deg); transform-origin:  30px -50px;} 
+    75% { transform: rotate(-5deg); transform-origin:  30px -50px;} 
+    100% { } 
+ }
 
 /* section-end */
 
