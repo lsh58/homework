@@ -9,6 +9,7 @@ header{
     box-shadow: rgba(0,0,0,.2) 6px 10px 50px;
     background-attachment: fixed;
 }
+
 header .top{
     background: rgba(0,0,0,.5);
 }
@@ -101,7 +102,7 @@ header .top .title p{
 header .top strong{
     color: #fff;
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: 'Noto Sans KR', sans-serif;
     position: absolute;
     top: 50%; left: 60%;
