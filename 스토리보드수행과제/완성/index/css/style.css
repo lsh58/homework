@@ -4,26 +4,26 @@
 /* header */
 
 header{
-    background: url("../img/backimg_01.jpg") no-repeat center 100% / cover;
+    background: url("../img/backimg_01.jpg") no-repeat center 120% / cover;
     position: relative;
     box-shadow: rgba(0,0,0,.2) 6px 10px 50px;
     background-attachment: fixed;
     transition: background-image 1s;
 }
 header.bg00{
-    background: url("../img/backimg_01.jpg") no-repeat center 100% / cover;
+    background: url("../img/backimg_01.jpg") no-repeat center 120% / cover;
     position: relative;
     box-shadow: rgba(0,0,0,.2) 6px 10px 50px;
     background-attachment: fixed;
 }
 header.bg01{
-    background: url("../img/backimg_02.jpg") no-repeat center 100% / cover;
+    background: url("../img/backimg_02.jpg") no-repeat center 120% / cover;
     position: relative;
     box-shadow: rgba(0,0,0,.2) 6px 10px 50px;
     background-attachment: fixed;
 }
 header.bg02{
-    background: url("../img/backimg_03.jpg") no-repeat center 100% / cover;
+    background: url("../img/backimg_03.jpg") no-repeat center 120% / cover;
     position: relative;
     box-shadow: rgba(0,0,0,.2) 6px 10px 50px;
     background-attachment: fixed;
@@ -31,41 +31,21 @@ header.bg02{
 header .top{
     background: rgba(0,0,0,.5);
 }
-/* header .top .scroll_top{
-    position: fixed;
-    width: 100%;
-    height: 12%;
-    background: none;
-    z-index: 300;
-}
-header .top .scroll_top.active{
-    background: #111;
-    overflow: hidden;
-}
-header .top .scroll_top a img{
-    display: block;
-    width: 198px;
-    height: 38px;
-    padding-top: 50px;
-    padding-left: 490px;
-} */
-header .top .scroll_top nav{
-    /* position: fixed;
-    top:0; left:47%; */
+header .top nav{
     width: 933px;
     margin: 0 auto;
-    padding-top: 70px;
+    padding-top: 80px;
     display: flex; 
     justify-content: flex-end;
 }
-header .top .scroll_top nav a{
+header .top nav a{
     margin-right:30px;
     color: transparent;
     font-weight: bold;
     font-size: 1.5rem;
     position: relative;
 }
-header .top .scroll_top nav a:after{
+header .top nav a:after{
     content: '';
     display: block;
     width: 0%;
@@ -79,11 +59,11 @@ header .top .scroll_top nav a:after{
     opacity: 0;
     transition: .5s;
 }
-header .top .scroll_top nav a:hover:after{
+header .top nav a:hover:after{
     width: 100%;
     opacity: 1;
 }
-header .top .scroll_top nav a:before{
+header .top nav a:before{
     content:attr(data-text);
     width:100%; height:100%;
     position: absolute;
@@ -94,23 +74,14 @@ header .top .scroll_top nav a:before{
     color:#fff;
     animation: none;
 }
-header .top .scroll_top nav a:hover:before{
-    animation: wobble 2s forwards;
-}
-@keyframes wobble { 
-    0% { transform: translate(-37%, -37%); } 
-    25% { transform: translate(-37%, -48%) } 
-    50% { transform: translate(-37%, -37%) } 
-    75% { transform: translate(-37%, -48%) } 
-    100% { transform: translate(-37%, -37%); } 
- }
+
 header .top .title{
     width: 933px; 
     margin:0 auto;
-    padding-top: 100px;
     color: #fff;
+    padding: 100px;
 }
-header .top .title h1{
+header .top .title h2{
     font-weight: bold;
     font-size: 3rem;
     line-height: 3.333rem;
@@ -120,7 +91,7 @@ header .top .title p{
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 100;
     font-size: 2.222rem;
-    padding-bottom: 145px;
+    padding-bottom: 70px;
     padding-top: 10px;
     color:#fff;
 }
@@ -364,6 +335,23 @@ section .board div .top span:first-child{
 section .board div .top span:last-child{
     transform: rotate(90deg);
 }
+section .board .notice{
+    visibility: hidden;
+    animation: none;
+    margin-top: 100px;
+}
+section .board .notice.active{
+    animation: scrollani 1s forwards;
+}
+@keyframes scrollani2{
+    from{
+        visibility: visible;
+        margin-top: 100px;
+    }
+    to{
+        margin-top: 0;
+    }
+}
 section .board .notice ul{
     width: 411px;
     margin: 10px auto;
@@ -423,13 +411,46 @@ section .board .information ul li a{
     font-weight: bold;
     font-size: 1.2rem;
 }
-
+section .board .information{
+    visibility: hidden;
+    animation: none;
+    margin-top: 100px;
+}
+section .board .information.active{
+    animation: scrollani 1s forwards;
+}
+@keyframes scrollani{
+    from{
+        visibility: visible;
+        margin-top: 100px;
+    }
+    to{
+        margin-top: 0;
+    }
+}
 
 section .lineup{
     width: 100%;
     box-shadow: rgba(0,0,0,.2) 6px 5px 20px;
     position: relative;
     overflow: hidden;
+}
+section .lineup{
+    visibility: hidden;
+    animation: none;
+}
+section .lineup.active{
+    animation: scrollani 1s forwards;
+}
+@keyframes scrollani{
+    from{
+        visibility: visible;
+        margin-top: 200px;
+    }
+    to{
+        visibility: visible;
+        margin-top: 0;
+    }
 }
 section .lineup div{
     width: 933px;
@@ -487,6 +508,25 @@ section .video_map{
     margin: 50px auto;
     position: relative;
     overflow: hidden;
+}
+section .video_map{
+    visibility: hidden;
+    opacity: 1;
+    animation: none;
+    margin-top: 50px;
+}
+section .video_map.active{
+    animation: scrollani2 1s forwards;
+}
+@keyframes scrollani2{
+    from{
+        visibility: visible;
+        margin-top: 150px;
+    }
+    to{
+        visibility: visible;
+        margin-top: 50px;
+    }
 }
 section .video_map .video{
     width: 649px;

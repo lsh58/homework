@@ -1,17 +1,30 @@
-// //스크롤네비
-// var header_scroll = document.querySelector("header .top .scroll_top");
-// var scrollTop = window.pageYOffset;
-
-// window.addEventListener("scroll", function() {
-//     console.log(scrollTop);
-//     if (scrollTop == 0) {
-//         header_scroll.classList.remove("active");
-//     } else {
-//         header_scroll.classList.add("active");
-//     }
-// });
-
-//스크롤네비end
+// //스크롤효과
+var win_height = window.innerHeight; /* 윈도우의 높이 */
+var notice = document.querySelector(".board .notice");
+var information = document.querySelector(".board .information");
+var lineup = document.querySelector(".lineup");
+var videomap = document.querySelector(".video_map");
+window.addEventListener("scroll", function() {
+    var scrollY = window.scrollY; /* 스크롤 값 */
+    if (scrollY >= 100) {
+        notice.classList.add("active");
+        information.classList.add("active");
+    } else {
+        notice.classList.remove("active");
+        information.classList.remove("active");
+    }
+    if (scrollY >= 560) {
+        lineup.classList.add("active");
+    } else {
+        lineup.classList.remove("active");
+    }
+    if (scrollY >= 800) {
+        videomap.classList.add("active");
+    } else {
+        videomap.classList.remove("active");
+    }
+});
+//스크롤효과end
 
 // D-day 출력
 
