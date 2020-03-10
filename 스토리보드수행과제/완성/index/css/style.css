@@ -410,7 +410,6 @@ section .lineup div{
     width: 933px;
     margin: 0 auto;
     padding-top: 26px;
-    padding-bottom: 220px;
 }
 section .lineup div strong{
     font-weight: bold;
@@ -425,51 +424,29 @@ section .lineup div p{
     font-family: 'Noto Sans KR', sans-serif;
     margin-left: 1px;
 }
-section .lineup div #slide{
-    position: absolute;
-    left: 0%;
+section .lineup #slide{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    animation: slide 60s 0s infinite linear;
+    justify-content: flex-start;
+    padding-bottom:26px;
 }
-@keyframes slide{
-    0%{left:0%}
-    100%{left:-171.4%}
-}
-
-section .lineup div #slide li{
+section .lineup #slide li{
     margin-left:10px;
     padding-top: 26px;
     width: 153px;
     height: 150px;
-    position: relative;
 }
-section .lineup div #slide li a{
+section .lineup #slide li a{
     width: 153px;
     height: 150px;
 }
-section .lineup div #slide li a img{
-    position: absolute;
+section .lineup #slide li a img{
+    filter: grayscale();
+    transition: .5s;
 }
-section .lineup div #slide li a img:first-child{
-    z-index: 2;
-    opacity: 0;
-    transition: 1s;
+section .lineup #slide li a:hover img{
+    filter: none;
 }
-section .lineup div #slide li a img:last-child{
-    z-index: 3;
-    opacity: 1;
-    transition: 1s;
-}
-section .lineup div #slide li:hover a img:first-child{
-    z-index: 3;
-    opacity: 1;
-}
-section .lineup div #slide li:hover a img:last-child{
-    z-index: 2;
-    opacity: 0;
-}
-
 
 section .video_map{
     width: 933px;
