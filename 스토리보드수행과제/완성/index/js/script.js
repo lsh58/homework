@@ -1,3 +1,18 @@
+// //스크롤네비
+// var header_scroll = document.querySelector("header .top .scroll_top");
+// var scrollTop = window.pageYOffset;
+
+// window.addEventListener("scroll", function() {
+//     console.log(scrollTop);
+//     if (scrollTop == 0) {
+//         header_scroll.classList.remove("active");
+//     } else {
+//         header_scroll.classList.add("active");
+//     }
+// });
+
+//스크롤네비end
+
 // D-day 출력
 
 var dday = document.querySelector(".top strong");
@@ -10,28 +25,52 @@ dday.innerHTML = "D" + gap;
 // D-day 출력 end
 
 //배경변경
-var bg = document.getElementsByTagName("header");
-var imgarr = new Array();
-for (var i = 0; i < 3; i++) {
-    imgarr[i] = "url(img/backimg_0" + (i + 1) + ".jpg)";
-}
-
-var i = 0;
+var header = document.querySelector("header");
+var num = 1;
 function showSlides() {
-    if (i > 2) {
-        i = 0;
-    }
-    if (i == 0) {
-        bg[0].style.backgroundPositionY = "80%";
+    if (num < 4) {
+        header.className = "bg0" + num;
+        num++;
     } else {
-        bg[0].style.backgroundPositionY = "200%";
+        num = 1;
     }
-    bg[0].style.backgroundImage = imgarr[i];
-    i++;
 }
 setInterval(showSlides, 3000);
 
 //배경변경 end
+
+//슬라이드
+
+var slide = document.querySelector("#slide");
+slide.style.left = 0 + "%";
+var a = 0;
+var bln = false;
+slide.addEventListener("mouseover", function() {
+    bln = true;
+    console.log(a);
+});
+slide.addEventListener("mouseout", function() {
+    bln = false;
+    slidework();
+});
+function slideimg() {
+    if (a < -171.4) {
+        a = 0;
+    } else {
+        a -= 0.02856667;
+        slide.style.left = a + "%";
+    }
+    if (bln == true) {
+        console.log(bln);
+        clearInterval(move);
+    }
+}
+
+var move;
+function slidework() {
+    move = setInterval(slideimg, 10);
+}
+slidework();
 
 // 비디오
 
