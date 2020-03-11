@@ -343,12 +343,13 @@ section .board .notice{
 section .board .notice.active{
     animation: scrollani 1s forwards;
 }
-@keyframes scrollani2{
+@keyframes scrollani{
     from{
         visibility: visible;
         margin-top: 100px;
     }
     to{
+        visibility: visible;
         margin-top: 0;
     }
 }
@@ -425,6 +426,7 @@ section .board .information.active{
         margin-top: 100px;
     }
     to{
+        visibility: visible;
         margin-top: 0;
     }
 }
@@ -434,23 +436,6 @@ section .lineup{
     box-shadow: rgba(0,0,0,.2) 6px 5px 20px;
     position: relative;
     overflow: hidden;
-}
-section .lineup{
-    visibility: hidden;
-    animation: none;
-}
-section .lineup.active{
-    animation: scrollani 1s forwards;
-}
-@keyframes scrollani{
-    from{
-        visibility: visible;
-        margin-top: 200px;
-    }
-    to{
-        visibility: visible;
-        margin-top: 0;
-    }
 }
 section .lineup div{
     width: 933px;
@@ -508,25 +493,6 @@ section .video_map{
     margin: 50px auto;
     position: relative;
     overflow: hidden;
-}
-section .video_map{
-    visibility: hidden;
-    opacity: 1;
-    animation: none;
-    margin-top: 50px;
-}
-section .video_map.active{
-    animation: scrollani2 1s forwards;
-}
-@keyframes scrollani2{
-    from{
-        visibility: visible;
-        margin-top: 150px;
-    }
-    to{
-        visibility: visible;
-        margin-top: 50px;
-    }
 }
 section .video_map .video{
     width: 649px;
