@@ -2,8 +2,8 @@
 var win_height = window.innerHeight; /* 윈도우의 높이 */
 var notice = document.querySelector(".board .notice");
 var information = document.querySelector(".board .information");
-var lineup = document.querySelector(".lineup");
-var videomap = document.querySelector(".video_map");
+// var lineup = document.querySelector(".lineup");
+// var videomap = document.querySelector(".video_map");
 window.addEventListener("scroll", function() {
     var scrollY = window.scrollY; /* 스크롤 값 */
     if (scrollY >= 100) {
@@ -13,16 +13,16 @@ window.addEventListener("scroll", function() {
         notice.classList.remove("active");
         information.classList.remove("active");
     }
-    if (scrollY >= 560) {
-        lineup.classList.add("active");
-    } else {
-        lineup.classList.remove("active");
-    }
-    if (scrollY >= 800) {
-        videomap.classList.add("active");
-    } else {
-        videomap.classList.remove("active");
-    }
+    // if (scrollY >= 560) {
+    //     lineup.classList.add("active");
+    // } else {
+    //     lineup.classList.remove("active");
+    // }
+    // if (scrollY >= 800) {
+    //     videomap.classList.add("active");
+    // } else {
+    //     videomap.classList.remove("active");
+    // }
 });
 //스크롤효과end
 
@@ -58,11 +58,12 @@ var slide = document.querySelector("#slide");
 slide.style.left = 0 + "%";
 var a = 0;
 var bln = false;
-slide.addEventListener("mouseover", function() {
+slide.addEventListener("mouseenter", function(e) {
+    e.stopPropagation();
     bln = true;
     console.log(a);
 });
-slide.addEventListener("mouseout", function() {
+slide.addEventListener("mouseleave", function() {
     bln = false;
     slidework();
 });
@@ -74,14 +75,13 @@ function slideimg() {
         slide.style.left = a + "%";
     }
     if (bln == true) {
-        console.log(bln);
         clearInterval(move);
     }
 }
 
 var move;
 function slidework() {
-    move = setInterval(slideimg, 10);
+    move = setInterval(slideimg, 30);
 }
 slidework();
 
