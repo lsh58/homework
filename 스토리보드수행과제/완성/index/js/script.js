@@ -2,6 +2,7 @@
 var win_height = window.innerHeight; /* 윈도우의 높이 */
 var notice = document.querySelector(".board .notice");
 var information = document.querySelector(".board .information");
+
 // var lineup = document.querySelector(".lineup");
 // var videomap = document.querySelector(".video_map");
 window.addEventListener("scroll", function() {
@@ -23,6 +24,42 @@ window.addEventListener("scroll", function() {
     // } else {
     //     videomap.classList.remove("active");
     // }
+});
+var i = 300,
+    scroll = 0,
+    lastScroll = 0;
+window.addEventListener("scroll", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    scroll = window.scrollY; /* 스크롤 값 */
+    if (scroll > lastScroll) {
+        if (scrollY >= 0) {
+            // window.scrollTo({ top: 1040, left: 0, behavior: "smooth 1s" });
+            var scrollto = setInterval(function() {
+                window.scrollTo(0, scroll);
+                console.log(scroll);
+                if (scroll < 1050) {
+                    scroll += 1;
+                } else {
+                    clearInterval(scrollto);
+                }
+            }, 20);
+        }
+    } else {
+        if (scrollY >= 0) {
+            // window.scrollTo({ top: 1040, left: 0, behavior: "smooth 1s" });
+            var scrollto = setInterval(function() {
+                window.scrollTo(0, scroll);
+                console.log(scroll);
+                if (scroll > 1) {
+                    scroll -= 1;
+                } else {
+                    clearInterval(scrollto);
+                }
+            }, 20);
+        }
+    }
+    lastScroll = scroll;
 });
 //스크롤효과end
 
