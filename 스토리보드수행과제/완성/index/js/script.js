@@ -1,52 +1,59 @@
 // //스크롤효과
-var win_height = window.innerHeight; /* 윈도우의 높이 */
-var notice = document.querySelector(".board .notice");
-var information = document.querySelector(".board .information");
-window.addEventListener("scroll", function() {
-    var scrollY = window.scrollY; /* 스크롤 값 */
-    if (scrollY >= 100) {
-        notice.classList.add("active");
-        information.classList.add("active");
-    } else {
-        notice.classList.remove("active");
-        information.classList.remove("active");
-    }
-});
+// var win_height = window.innerHeight; /* 윈도우의 높이 */
+// var notice = document.querySelector(".board .notice");
+// var information = document.querySelector(".board .information");
+// var videomap = document.querySelector(".video_map");
 
-var i = 300,
-    scroll = 0,
-    lastScroll = 0;
-window.addEventListener("scroll", function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    scroll = window.scrollY; /* 스크롤 값 */
-    if (scroll > lastScroll) {
-        if (scrollY >= 0) {
-            // window.scrollTo({ top: 1040, left: 0, behavior: "smooth 1s" });
-            var scrollto = setInterval(function() {
-                window.scrollTo(0, scroll);
-                if (scroll < 1050) {
-                    scroll += 1;
-                } else {
-                    clearInterval(scrollto);
-                }
-            }, 20);
-        }
-    } else {
-        if (scrollY >= 0) {
-            // window.scrollTo({ top: 1040, left: 0, behavior: "smooth 1s" });
-            var scrollto = setInterval(function() {
-                window.scrollTo(0, scroll);
-                if (scroll > 1) {
-                    scroll -= 1;
-                } else {
-                    clearInterval(scrollto);
-                }
-            }, 20);
-        }
-    }
-    lastScroll = scroll;
-});
+// window.addEventListener("scroll", function() {
+//     var scrollY = window.scrollY; /* 스크롤 값 */
+//     if (scrollY >= 100) {
+//         notice.classList.add("active");
+//         information.classList.add("active");
+//     } else {
+//         notice.classList.remove("active");
+//         information.classList.remove("active");
+//     }
+//     if (scrollY >= 980) {
+//         videomap.style.margin = 50 + "px" + " auto";
+//     } else {
+//         videomap.style.margin = 400 + "px" + " auto";
+//     }
+// });
+
+// var i = 300,
+//     scroll = 0,
+//     lastScroll = 0;
+// window.addEventListener("scroll", function(e) {
+//     e.preventDefault();
+//     e.stopPropagation();
+//     scroll = window.scrollY; /* 스크롤 값 */
+//     if (scroll > lastScroll) {
+//         if (scrollY >= 0) {
+//             // window.scrollTo({ top: 1040, left: 0, behavior: "smooth 1s" });
+//             var scrollto = setInterval(function() {
+//                 window.scrollTo(0, scroll);
+//                 if (scroll < 1050) {
+//                     scroll += 1;
+//                 } else {
+//                     clearInterval(scrollto);
+//                 }
+//             }, 20);
+//         }
+//     } else {
+//         if (scrollY >= 0) {
+//             // window.scrollTo({ top: 1040, left: 0, behavior: "smooth 1s" });
+//             var scrollto = setInterval(function() {
+//                 window.scrollTo(0, scroll);
+//                 if (scroll > 1) {
+//                     scroll -= 1;
+//                 } else {
+//                     clearInterval(scrollto);
+//                 }
+//             }, 20);
+//         }
+//     }
+//     lastScroll = scroll;
+// });
 //스크롤효과end
 
 // D-day 출력
@@ -84,7 +91,6 @@ var bln = false;
 slide.addEventListener("mouseenter", function(e) {
     e.stopPropagation();
     bln = true;
-    console.log(a);
 });
 slide.addEventListener("mouseleave", function() {
     bln = false;

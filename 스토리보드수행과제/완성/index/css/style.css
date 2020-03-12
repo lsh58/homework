@@ -336,11 +336,11 @@ section .board div .top span:last-child{
     transform: rotate(90deg);
 }
 section .board .notice{
-    visibility: hidden;
+    /* visibility: hidden; */
     animation: none;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
-section .board .notice.active{
+/* section .board .notice.active{
     animation: scrollani 1s forwards;
 }
 @keyframes scrollani{
@@ -352,7 +352,7 @@ section .board .notice.active{
         visibility: visible;
         margin-top: 0;
     }
-}
+} */
 section .board .notice ul{
     width: 411px;
     margin: 10px auto;
@@ -413,11 +413,11 @@ section .board .information ul li a{
     font-size: 1.2rem;
 }
 section .board .information{
-    visibility: hidden;
+    /* visibility: hidden; */
     animation: none;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
-section .board .information.active{
+/* section .board .information.active{
     animation: scrollani 1s forwards;
 }
 @keyframes scrollani{
@@ -429,7 +429,7 @@ section .board .information.active{
         visibility: visible;
         margin-top: 0;
     }
-}
+} */
 
 section .lineup{
     width: 100%;
@@ -493,6 +493,7 @@ section .video_map{
     margin: 50px auto;
     position: relative;
     overflow: hidden;
+    transition: 1s;
 }
 section .video_map .video{
     width: 649px;
