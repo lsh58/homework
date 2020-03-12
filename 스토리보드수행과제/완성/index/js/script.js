@@ -2,9 +2,6 @@
 var win_height = window.innerHeight; /* 윈도우의 높이 */
 var notice = document.querySelector(".board .notice");
 var information = document.querySelector(".board .information");
-
-// var lineup = document.querySelector(".lineup");
-// var videomap = document.querySelector(".video_map");
 window.addEventListener("scroll", function() {
     var scrollY = window.scrollY; /* 스크롤 값 */
     if (scrollY >= 100) {
@@ -14,17 +11,8 @@ window.addEventListener("scroll", function() {
         notice.classList.remove("active");
         information.classList.remove("active");
     }
-    // if (scrollY >= 560) {
-    //     lineup.classList.add("active");
-    // } else {
-    //     lineup.classList.remove("active");
-    // }
-    // if (scrollY >= 800) {
-    //     videomap.classList.add("active");
-    // } else {
-    //     videomap.classList.remove("active");
-    // }
 });
+
 var i = 300,
     scroll = 0,
     lastScroll = 0;
@@ -37,7 +25,6 @@ window.addEventListener("scroll", function(e) {
             // window.scrollTo({ top: 1040, left: 0, behavior: "smooth 1s" });
             var scrollto = setInterval(function() {
                 window.scrollTo(0, scroll);
-                console.log(scroll);
                 if (scroll < 1050) {
                     scroll += 1;
                 } else {
@@ -50,7 +37,6 @@ window.addEventListener("scroll", function(e) {
             // window.scrollTo({ top: 1040, left: 0, behavior: "smooth 1s" });
             var scrollto = setInterval(function() {
                 window.scrollTo(0, scroll);
-                console.log(scroll);
                 if (scroll > 1) {
                     scroll -= 1;
                 } else {
