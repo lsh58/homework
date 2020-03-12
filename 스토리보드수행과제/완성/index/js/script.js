@@ -104,7 +104,7 @@ function slideimg() {
 
 var move;
 function slidework() {
-    move = setInterval(slideimg, 30);
+    move = setInterval(slideimg, 20);
 }
 slidework();
 
