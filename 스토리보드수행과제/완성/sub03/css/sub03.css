@@ -140,7 +140,7 @@ header .top strong{
 
 section .ticket_link{
     width: 933px;
-    margin: 100px auto 0;
+    margin: 100px auto 30px;
     display: flex;
     justify-content: space-around;
     background: linear-gradient(90deg, rgb(237, 47, 86), rgb(246, 116, 119));
@@ -151,8 +151,8 @@ section .ticket_link a{
     width: 311px;
     line-height: 40px;
     color:#fff;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.6rem;
+    font-weight: 600;
     border-left: 1px solid rgba(255,255,255,0.4);
     border-right: 1px solid rgba(0,0,0,.4);
 }
@@ -162,15 +162,26 @@ section .ticket_link a:first-child{
 section .ticket_link a:last-child{
     border-right: none;
 }
+
 section article{
+    width: 903px;
+    margin:50px auto;
+    position: relative;
+}
+section article .frame{
     width: 933px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    height: 100%;
+    padding: 20px 0;
+    position: absolute;
+    left: 50%; top:50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    background: #eee;
+    box-shadow: rgba(0,0,0,.2) 3px 3px 5px 0px,rgba(0,0,0,.2) -3px -3px 5px 0px;
 }
 section article h2{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    margin: 20px 0 0;
     background: #eee;
     padding: 17px 20px;
     border-top: 2px solid #111;
@@ -186,11 +197,13 @@ section article .ticket01{
     width: 100%;
     background:#4075c5;
     overflow: hidden;
+    margin-top:10px;
+    padding-bottom: 30px;
 }
 section article div img{
     width: 70%;
     float: left;
-    padding: 0 140px;
+    padding: 20px 140px;
 }
 section article div .point{
     float: left;
@@ -198,20 +211,55 @@ section article div .point{
     display: flex;
     flex-direction: column;
 }
-section article div .point strong{
-    font-weight: 600;
+section article .ticket01 .point strong{
+    font-weight: 550;
     font-size: 1.2rem;
     color: #fff;
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
-section article div .point p{
+section article .ticket01 .point p{
     display: inline;
     font-weight: lighter;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #fff;
     padding:0 10px;
 }
-
+section article .ticket01 .point .detail{
+    width: 90%;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    line-height: 1.6rem;
+}
+section article .ticket02{
+    width: 100%;
+    background:#ffeee7;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+section article .ticket02 .notice{
+    padding-top:  20px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+section article .ticket02 .point strong{
+    font-weight: 550;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+section article .ticket02 .point p{
+    display: inline;
+    font-weight: lighter;
+    font-size: 1.1rem;
+    padding:0 10px;
+}
+section article .ticket02 .point .detail{
+    width: 90%;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    line-height: 1.6rem;
+}
 /* section article p {
     font-size:1rem;
     line-height: 2rem;
@@ -221,6 +269,7 @@ section article div .point p{
 
 /* footer */
 footer{
+    margin-top: 50px;
     box-shadow: rgba(0,0,0,.2) 6px 5px 20px;
 }
 footer .content{

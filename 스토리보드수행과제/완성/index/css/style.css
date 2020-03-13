@@ -492,17 +492,21 @@ section .video_map{
     width: 933px;
     margin: 50px auto;
     position: relative;
-    overflow: hidden;
     transition: 1s;
 }
 section .video_map .video{
     width: 649px;
     height: 365px;
     border-radius: 20px;
-    box-shadow: rgba(0,0,0,.2) 6px 5px 20px;
     position: relative;
     overflow: hidden;
     float: left;
+    box-shadow: rgba(0,0,0,.5) 6px 5px 20px;
+}
+section .video_map:after{
+    content: '';
+    display: block;
+    clear: both;
 }
 #video{
     position: absolute;
