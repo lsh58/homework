@@ -2,9 +2,7 @@
 
 
 /* header */
-body{
-    scroll-snap-type: y mandatory;
-}
+
 header{
     background: url("../img/backimg_01.jpg") no-repeat center 120% / cover;
     position: relative;
@@ -230,6 +228,7 @@ section .ticket{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 /* section .ticket span{
     width: 2px;
     height: 41px;
