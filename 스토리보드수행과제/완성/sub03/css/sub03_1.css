@@ -154,6 +154,8 @@ section .ticket_nav a{
     font-weight: 600;
     text-align: center;
     position: relative;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
 }
 section .ticket_nav a:after{
     content: '';
@@ -165,12 +167,22 @@ section .ticket_nav a:after{
     transform: translate(-50%,-50%);
     transition: width .5s;
 }
+section .ticket_nav a:first-child{
+    border-left: none;
+}
+section .ticket_nav a:last-child{
+    border-right: none;
+}
 section .ticket_nav a.active:after{
     content: '';
     width: 80%;
 }
+section .ticket_nav a:first-child.active:after{
+    content: '';
+    width: 40%;
+}
 section .ticket_nav a:hover:after{
-    width: 80%;
+    width: 60%;
 }
 
 

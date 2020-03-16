@@ -168,6 +168,14 @@ section .logo img{
     width: 198px;
     height: 41px;
 }
+section .image{
+    margin: 0 auto;
+    width: 55%;
+    height: 400px;
+    background: url("../img/backimg_01.jpg") no-repeat center/ cover;
+    /* background-attachment: fixed; */
+    margin-bottom: 40px;
+}
 section article{
     width: 933px;
     margin: 0 auto;
