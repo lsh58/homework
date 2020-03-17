@@ -88,11 +88,11 @@ var slide = document.querySelector("#slide");
 slide.style.left = 0 + "%";
 var a = 0;
 var bln = false;
-slide.addEventListener("mouseenter", function(e) {
+slide.addEventListener("mouseenter", function (e) {
     e.stopPropagation();
     bln = true;
 });
-slide.addEventListener("mouseleave", function() {
+slide.addEventListener("mouseleave", function () {
     bln = false;
     slidework();
 });
@@ -132,12 +132,12 @@ function playPause() {
     }
 }
 
-play.addEventListener("click", function(e) {
+play.addEventListener("click", function (e) {
     e.preventDefault();
     playPause();
 }); //재생
 
-pause.addEventListener("click", function(e) {
+pause.addEventListener("click", function (e) {
     e.preventDefault();
     playPause();
 }); //일시정지
