@@ -40,7 +40,7 @@ header .top nav a:after{
     opacity: 0;
     transition: .5s;
 }
-header .top nav a:first-child:after{
+header .top nav a:nth-of-type(2):after{
     width: 100%;
     opacity: 1;
 }
@@ -80,6 +80,7 @@ header .top .title p{
     padding-bottom: 70px;
     padding-top: 10px;
     color:#fff;
+    letter-spacing: .1rem;
 }
 header .top strong{
     color: #fff;
@@ -137,89 +138,24 @@ header .top strong{
 /* header-end */
 
 /* section */
-
-section .logo{
-    width: 933px;
-    margin: 100px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-section .logo .text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 10px;
-}
-section .logo p{
-    font-weight: lighter;
-    font-size: 1.667rem;
-    color: #f15166;
-    margin: 10px 0 8px;
-}
-section .logo strong{
-    font-weight: bold;
-    letter-spacing: 0.05rem;
-    font-size: 1rem;
-    color: #f15166;
-}
-section .logo img{
-    padding-top: 10px;
-    width: 198px;
-    height: 41px;
-}
-section .image{
-    margin: 0 auto;
-    width: 60%;
-    height: 400px;
-    background: url("../img/backimg_01.jpg") no-repeat center/ cover;
-    /* background-attachment: fixed; */
-    margin-bottom: 100px;
-}
-section article{
-    width: 933px;
+section{
+    width: 50%;
     margin: 0 auto;
 }
-section article h3{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 150px;
-    margin-bottom: 20px;
-    text-align: center;
-    visibility: visible;
+section h3{
+    line-height: 50px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding-top: 180px;
 }
-section article p {
-    font-size:1rem;
-    line-height: 2rem;
-    margin-top: 150px;
-    margin-bottom: 40px;
-    text-align: center;
-    word-break: keep-all;
-    visibility: visible;
-}
-section article h3.active{
-    animation: scrollani 1s forwards;
-}
-section article p.active{
-    animation: scrollani 1s forwards;
-}
-@keyframes scrollani{
-    0%{
-        visibility: visible;
-        margin-top: 150px;
-    }
-    20%{
-        visibility: visible;
-        margin-top: -8px;
-    }
-    40%{
-        visibility: visible;
-        margin-top: 8px;
-    }
-    100%{
-        visibility: visible;
-        margin-top: 0;
-    }
+section p{
+    line-height: 30px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-left: 3px;
+    letter-spacing: 0.1rem;
+    padding-bottom: 20px;
 }
 /* section-end */
 
