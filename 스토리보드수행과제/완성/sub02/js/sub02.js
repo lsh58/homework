@@ -1,37 +1,35 @@
-function getCurrentScrollPercentage() {
-    return (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
+var wrapper = document.querySelectorAll('.img-wrapper');
+var wrapper_first = wrapper[0].querySelectorAll('.img-sub a');
+var wrapper_second = wrapper[1].querySelectorAll('.img-sub a');
+var mainimg = document.querySelectorAll('.img-wrapper .img-main');
+// console.log(thumbnail[0]);
+// console.log(document.querySelector(".img-sub"))
+
+
+for (var i = 0; i < wrapper_first.length; i++) {
+    wrapper_first[i].addEventListener('mouseenter', function (e) {
+        e.preventDefault();
+        var imgname = getComputedStyle(this).getPropertyValue("background-image");
+        mainimg[0].style = "background:" + imgname + " no-repeat center / cover;";
+        console.log(imgname)
+    })
+    wrapper_first[i].addEventListener('mouseleave', function (e) {
+        var imgname = getComputedStyle(this).getPropertyValue("background-image");
+        mainimg[0].style = "background: url('../img/lineup/lineup01.jpg') no-repeat center/ cover;";
+        console.log(imgname)
+    })
 }
-
-var title = document.querySelectorAll('article h3');
-var text = document.querySelectorAll('article p');
-
-window.addEventListener('scroll', function () {
-    var scrollY = getCurrentScrollPercentage();
-    console.log(scrollY);
-    if (scrollY <= 5) {
-        for (var i = 0; i < title.length; i++) {
-            title[i].classList.remove('active');
-        }
-        for (var i = 0; i < text.length; i++) {
-            text[i].classList.remove('active');
-        }
-    }
-    if (scrollY >= 10) {
-        title[0].classList.add('active');
-        text[0].classList.add('active');
-    }
-    if (scrollY >= 37) {
-        title[1].classList.add('active');
-        text[1].classList.add('active');
-    }
-    if (scrollY >= 47) {
-        title[2].classList.add('active');
-        text[2].classList.add('active');
-    }
-    if (scrollY >= 79) {
-        text[3].classList.add('active');
-    }
-    if (scrollY >= 85) {
-        text[4].classList.add('active');
-    }
-});
+for (var i = 0; i < wrapper_second.length; i++) {
+    wrapper_second[i].addEventListener('mouseenter', function (e) {
+        e.preventDefault();
+        var imgname = getComputedStyle(this).getPropertyValue("background-image");
+        mainimg[1].style = "background:" + imgname + " no-repeat center / cover;";
+        console.log(imgname)
+    })
+    wrapper_second[i].addEventListener('mouseleave', function (e) {
+        var imgname = getComputedStyle(this).getPropertyValue("background-image");
+        mainimg[1].style = "background: url('../img/lineup/lineup01.jpg') no-repeat center/ cover;";
+        console.log(imgname)
+    })
+}
+//json이용해서 할것

@@ -35,3 +35,4 @@ window.addEventListener('scroll', function () {
         text[4].classList.add('active');
     }
 });
+//h3와 p 모두 offsetheight값을구해서 그 값을 지나갈때 이벤트 발생하도록 클래스를 추가하면?
