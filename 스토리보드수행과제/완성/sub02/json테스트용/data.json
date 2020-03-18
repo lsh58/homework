@@ -1,20 +1,104 @@
 {
-  "events": [
+  "first": [
     {
-      "url":
-      "location": "San Francisco, CA",
-      "date": "May 1",
-      "map": "img/map-ca.png"
+      "url": "../img/lineup/10CM_official.jpg",
     },
     {
-      "location": "Austin, TX",
-      "date": "May 15",
-      "map": "img/map-tx.png"
+      "url": "../img/lineup/J_ust_official.jpg"
     },
     {
-      "location": "New York, NY",
-      "date": "May 30",
-      "map": "img/map-ny.png"
+      "url": "../img/lineup/damgong_official.jpg"
+    },
+    {
+      "url": "../img/lineup/DB_official.jpg"
+    },
+    {
+      "url": "../img/lineup/motte_official.jpg"
+    },
+    {
+      "url": "../img/lineup/soran_official.jpg"
+    },
+    {
+      "url": "../img/lineup/standingegg-db.jpg"
+    },
+    {
+      "url": "../img/lineup/ericnam_artistcb.jpg"
+    },
+    {
+      "url": "../img/lineup/Nflying_official.jpg"
+    },
+    {
+      "url": "../img/lineup/WH3N_official.jpg"
+    },
+    {
+      "url": "../img/lineup/YDD_official.jpg"
+    },
+    {
+      "url": "../img/lineup/younha_official-1.jpg"
+    },
+    {
+      "url": "../img/lineup/jangbeomjune_official.jpg"
+    },
+    {
+      "url": "../img/lineup/0907_zitten_main.jpg"
+    },
+    {
+      "url": "../img/lineup/choinakta_official.jpg"
+    },
+    {
+      "url": "../img/lineup/ChoiYeGeun.jpg"
+    }
+  ]
+}
+{
+  "second": [
+    {
+      "url": "../img/lineup/autumnvacation.jpg"
+    },
+    {
+      "url": "../img/lineup/mmt_official.jpg"
+    },
+    {
+      "url": "../img/lineup/kimsuyoung_official.jpg"
+    },
+    {
+      "url": "../img/lineup/martinsmith_official.jpg"
+    },
+    {
+      "url": "../img/lineup/BOL4_official.jpg"
+    },
+    {
+      "url": "../img/lineup/SURL_official.jpg"
+    },
+    {
+      "url": "../img/lineup/Thornapple_official.jpg"
+    },
+    {
+      "url": "../img/lineup/owhen_official.jpg"
+    },
+    {
+      "url": "../img/lineup/zairo_official-1.jpg"
+    },
+    {
+      "url": "../img/lineup/JUNG-SEUNGHWAN.jpg"
+    },
+    {
+      "url": "../img/lineup/JUNGJOONIL_official.jpg"
+    },
+    {
+      "url": "../img/lineup/jooyoung_official.jpg"
+    },
+    {
+      "url": "../img/lineup/pptz.jpg"
+    },
+    {
+      "url": "../img/lineup/paulkim.jpg"
+    },
+    {
+      "url": "../img/lineup/isaachong_artistdb.jpg"
+    },
+    {
+      "url": "../img/lineup/HYNN_artist_db.jpg"
     }
   ]
 }

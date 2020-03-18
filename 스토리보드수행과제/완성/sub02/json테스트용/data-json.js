@@ -4,29 +4,29 @@
 
 var xhr = new XMLHttpRequest();                 // Create XMLHttpRequest object
 
-xhr.onload = function() {                       // When readystate changes
+xhr.onload = function () {                       // When readystate changes
   // The following conditional check will not work locally - only on a server
   //if(xhr.status === 200) {                      // If server status was ok
-    responseObject = JSON.parse(xhr.responseText);
+  responseObject = JSON.parse(xhr.responseText);
 
-    // BUILD UP STRING WITH NEW CONTENT (could also use DOM manipulation)
-    var newContent = '';
-    for (var i = 0; i < responseObject.events.length; i++) { // Loop through object
-      newContent += '<div class="event">';
-      newContent += '<img src="' + responseObject.events[i].map + '" ';
-      newContent += 'alt="' + responseObject.events[i].location + '" />';
-      newContent += '<p><b>' + responseObject.events[i].location + '</b><br>';
-      newContent += responseObject.events[i].date + '</p>';
-      newContent += '</div>';
-    }
+  // BUILD UP STRING WITH NEW CONTENT (could also use DOM manipulation)
+  var firstContent = '';
+  for (var i = 0; i < responseObject.first.length; i++) { // Loop through object
+    firstContent += '<a href="" style = "background: url(' + responseObject.events[i].url + ') no-repeat center/ cover;"></a>';
+  }
 
-    // Update the page with the new content
-    document.getElementById('content').innerHTML = newContent;
+  // Update the page with the new content
+  document.getElementById('first').innerHTML = firstContent;
 
   //}
+
+  for (var i = 0; i < responseObject.second.length; i++) { // Loop through object
+    secondContent += '<a href="" style = "background: url(' + responseObject.events[i].url + ') no-repeat center/ cover;"></a>';
+  }
+  document.getElementById('second').innerHTML = secondContent;
 };
 
-xhr.open('GET', 'data/data.json', true);        // Prepare the request
+xhr.open('GET', 'data.json', true);        // Prepare the request
 xhr.send(null);                                 // Send the request
 
 // When working locally in Firefox, you may see an error saying that the JSON is not well-formed.
