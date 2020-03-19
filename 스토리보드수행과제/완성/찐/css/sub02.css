@@ -315,106 +315,10 @@ section .img-wrapper .img-sub a:after{
     left:50%; top: 50%;
     transform: translate(-50%,-50%); 
 }
-
 section .img-wrapper .img-sub a:hover:after{
     background: none;
 }
-section .img-wrapper .img-sub a:nth-of-type(1){ 
-    background: url('../img/lineup/10CM_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(2){ 
-    background: url('../img/lineup/J_ust_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(3){ 
-    background: url('../img/lineup/damgong_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(4){ 
-    background: url('../img/lineup/DB_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(5){ 
-    background: url('../img/lineup/motte_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(6){ 
-    background: url('../img/lineup/soran_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(7){ 
-    background: url('../img/lineup/standingegg-db.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(8){ 
-    background: url('../img/lineup/ericnam_artistcb.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(9){ 
-    background: url('../img/lineup/Nflying_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(10){ 
-    background: url('../img/lineup/WH3N_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(11){ 
-    background: url('../img/lineup/YDD_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(12){ 
-    background: url('../img/lineup/younha_official-1.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(13){ 
-    background: url('../img/lineup/jangbeomjune_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(14){ 
-    background: url('../img/lineup/0907_zitten_main.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(15){ 
-    background: url('../img/lineup/choinakta_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper .img-sub a:nth-of-type(16){ 
-    background: url('../img/lineup/ChoiYeGeun.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(1){ 
-    background: url('../img/lineup/autumnvacation.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(2){ 
-    background: url('../img/lineup/mmt_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(3){ 
-    background: url('../img/lineup/kimsuyoung_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(4){ 
-    background: url('../img/lineup/martinsmith_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(5){ 
-    background: url('../img/lineup/BOL4_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(6){ 
-    background: url('../img/lineup/SURL_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(7){ 
-    background: url('../img/lineup/Thornapple_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(8){ 
-    background: url('../img/lineup/owhen_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(9){ 
-    background: url('../img/lineup/zairo_official-1.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(10){ 
-    background: url('../img/lineup/JUNG-SEUNGHWAN.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(11){ 
-    background: url('../img/lineup/JUNGJOONIL_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(12){ 
-    background: url('../img/lineup/jooyoung_official.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(13){ 
-    background: url('../img/lineup/pptz.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(14){ 
-    background: url('../img/lineup/paulkim.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(15){ 
-    background: url('../img/lineup/isaachong_artistdb.jpg') no-repeat center / cover;
-}
-section .img-wrapper:last-child .img-sub a:nth-of-type(16){ 
-    background: url('../img/lineup/HYNN_artist_db.jpg') no-repeat center / cover;
-}
+
 
 /* section-end */
 
