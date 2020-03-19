@@ -143,7 +143,7 @@ section{
     width:55%;
     margin: 0 auto;
 }
-section h3{
+section>h3{
     line-height: 50px;
     font-size: 2.2rem;
     font-weight: 600;
@@ -205,8 +205,12 @@ section .img-wrapper .img-main .content{
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     z-index: 10;
-    opacity: 1;
+    opacity: 0;
     transition: .5s;
+    overflow: auto;
+}
+section .img-wrapper .img-main .content::-webkit-scrollbar{
+    display: none;
 }
 section .img-wrapper .img-main .content h3{
     color:#fff;
@@ -214,6 +218,9 @@ section .img-wrapper .img-main .content h3{
     font-size: 4rem;
     padding-left: 30px;
     font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    padding-top: 80px;
+    word-break: keep-all;
 }
 section .img-wrapper .img-main .content p{
     width: 90%;
@@ -221,9 +228,20 @@ section .img-wrapper .img-main .content p{
     color:#fff;
     font-weight: 300;
     font-size: 1.1rem;
-    line-height: 1.4rem;
-    padding-top: 40px;
+    line-height: 1.5rem;
+    padding-top: 30px;
     font-family: 'Noto Sans KR', sans-serif;
+    text-indent: 10px;
+    text-align: center;
+}
+section .img-wrapper .img-main .content #text_f{
+    text-align: left;
+}
+section .img-wrapper .img-main .content #text_s{
+    text-align: left;
+}
+section .img-wrapper .img-main .content p:last-child{
+    padding-bottom: 60px;
 }
 section .img-wrapper>i{
     color: #fff;

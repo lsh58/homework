@@ -9,39 +9,37 @@ window.addEventListener('load', function () {
     // console.log(document.querySelector(".img-sub"))
 
     for (var i = 0; i < wrapper_first.length; i++) {
-        wrapper_first[i].addEventListener('mouseenter', function (e) {
+        wrapper_first[i].addEventListener('click', function (e) {
             e.preventDefault();
             var imgname = this.style.backgroundImage;
             mainimg[0].style = "background:" + imgname + " no-repeat center / cover;";
+            mainimg[0].addEventListener('mouseover', function () {
+                content_first.style.opacity = 1;
+            })
+            mainimg[0].addEventListener('mouseleave', function () {
+                content_first.style.opacity = 0;
+            })
+        })
 
-        })
-        wrapper_first[i].addEventListener('click', function (e) {
-            e.preventDefault();
-            content_first.style.opacity = 1;
-        })
-
-        wrapper_first[i].addEventListener('mouseleave', function (e) {
-            var imgname = this.style.backgroundImage;
-            content_first.style.opacity = 0;
-            mainimg[0].style = "background: url('../img/lineup/lineup01.jpg') no-repeat center/ cover;";
-        })
     }
+    // wrapper_second[i].addEventListener('mouseleave', function (e) {
+    //     content_second.style.opacity = 0;
+    //     mainimg[1].style = "background: url('../img/lineup/lineup01.jpg') no-repeat center/ cover;";
+    // })
 
     for (var i = 0; i < wrapper_second.length; i++) {
-        wrapper_second[i].addEventListener('mouseenter', function (e) {
+        wrapper_second[i].addEventListener('click', function (e) {
             e.preventDefault();
             var imgname = this.style.backgroundImage;
             mainimg[1].style = "background:" + imgname + " no-repeat center / cover;";
+            mainimg[1].addEventListener('mouseover', function () {
+                content_second.style.opacity = 1;
+            })
+            mainimg[1].addEventListener('mouseleave', function () {
+                content_second.style.opacity = 0;
+            })
         })
-        wrapper_second[i].addEventListener('click', function (e) {
-            e.preventDefault();
-            content_second.style.opacity = 1;
-        })
-        wrapper_second[i].addEventListener('mouseleave', function (e) {
-            var imgname = this.style.backgroundImage;
-            content_second.style.opacity = 0;
-            mainimg[1].style = "background: url('../img/lineup/lineup01.jpg') no-repeat center/ cover;";
-        })
+
     }
 });
 //json이용해서 할것
