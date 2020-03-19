@@ -10,6 +10,7 @@ header{
     background-attachment: fixed;
 }
 header .top{
+    height: 600px;
     background: rgba(0,0,0,.5);
 }
 header .top nav{
@@ -40,7 +41,7 @@ header .top nav a:after{
     opacity: 0;
     transition: .5s;
 }
-header .top nav a:nth-last-child(3):after{
+header .top nav a:nth-of-type(4):after{
     width: 100%;
     opacity: 1;
 }
@@ -64,7 +65,7 @@ header .top .title{
     width: 933px; 
     margin:0 auto;
     color: #fff;
-    padding: 100px 0;
+    padding: 160px 0;
     text-align: center;
 }
 header .top .title h2{
@@ -230,6 +231,7 @@ section .main_content01 .content ul li{
     margin-bottom: 5px;
     text-align: center;
     margin-top: 150px;
+    opacity: 0;
 }
 section .main_content01 .content ul li:nth-of-type(2n){
     padding:5px 0 20px;
@@ -262,23 +264,20 @@ section .main_content01 .content ul li:last-child{
     width: 60%;
 }
 section .main_content01 .content ul li.active{
-    animation: scrollani 1s forwards;
+    animation: scrollani 2s forwards;
 }
 @keyframes scrollani{
     0%{
-        visibility: visible;
         margin-top: 150px;
     }
     20%{
-        visibility: visible;
         margin-top: -8px;
     }
     40%{
-        visibility: visible;
         margin-top: 8px;
     }
     100%{
-        visibility: visible;
+        opacity: 1;
         margin-top: 0;
     }
 }

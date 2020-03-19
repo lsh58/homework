@@ -1,102 +1,230 @@
 {
   "first": [
     {
-      "url": "../img/lineup/10CM_official.jpg"
+      "url": "../img/lineup/10CM_official.jpg",
+      "name": "10cm",
+      "text": "한국 음악계의 하나의 아이콘이자, 담백한 가사와 멜로디로 대중을 사로잡은 10CM. ‘오늘밤은 어둠이 무서워요’, ‘아메리카노’로 이름을 알린 2010년에는 홍대 신의 ‘통기타와 젬베’ 열풍을 설명하는 척도였고, 2011년 2월에 나온 1집 [1.0]으로는 소속사도, 별 홍보도 없이 하루 만에 초도 1만 장을 매진시키는 진기록을 세웠다. 2012년 공개한 2집 [2.0]에서는 이들 고유의 위트와 귀에 감기는 멜로디를 여전히 유지한채 여기에 한층 발전된, 그리고 다채로워진 사운드를 더하면서 음악적인 욕심을 드러냈다. 다양한 아티스트와의 컬래버레이션, 각종 드라마 OST, 대형 페스티벌 섭외 1순위 등 꾸준한 사랑을 받고 있다.",
+      "facebook": "www.facebook.com/tencentimeter",
+      "instagram": "instagram.com/hi990103"
     },
     {
-      "url": "../img/lineup/J_ust_official.jpg"
+      "url": "../img/lineup/J_ust_official.jpg",
+      "name": "그_냥(j_ust)",
+      "text": "‘새벽 두 시’, ‘너의 밤은 어때’ 등으로 잘 알려진 싱어송라이터 그_냥(j_ust). 2015년 7월 닥터심슨과의 컬래버레이션 [예뻐보여]를 통해 데뷔했고, 이어 싱글 ‘엄마생각’, EP [다른 밤]을 발표하며 인디 신에 이름을 알렸다. 2017년 6월에 발표된 첫 번째 정규 앨범 선공개 싱글로 ‘비의 계절’, ‘부드러운’, ‘잘거예요?’, ‘한 걸음 한 걸음’ 등을 발표하며 기대를 모았고, 앨범 발매 후 인디 차트에 장시간 머무르며 리스너들의 사랑을 받았다. 2018년 6월 두 번째 미니앨범 [안_녕?]에 이어 11월에는 전작의 타이틀을 잇는 [안_녕..]을 발표했다. 이후 감성적인 목소리와 가사로 사랑받으며, OST와 다수의 공연, 페스티벌에 참여하며 활발한 활동을 보여주고 있다.",
+      "facebook": "facebook.com/Official449",
+      "instagram": "instagram.com/no_449/"
     },
     {
-      "url": "../img/lineup/damgong_official.jpg"
+      "url": "../img/lineup/damgong_official.jpg",
+      "name": "담소네공방",
+      "text": "‘소소한 이야기를 나누다’, 공방은 ‘무언가를 만드는 공간’이란 뜻으로 소소한 이야기를 만드는 공간 이란 의미가 담겨있는 듀오. 꾸준한 음원 발매, 드라마 OST 참여, 단독 콘서트, 페스티벌 출연 등 다방면에서 활발한 활동하며 지속적인 사랑을 받고 있다.",
+      "facebook": "facebook.com/damgong0505",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/DB_official.jpg"
+      "url": "../img/lineup/DB_official.jpg",
+      "name": "DAYBREAK(데이브레이크)",
+      "text": "‘음악 안에서 자유롭다’를 모토로 Pop을 기반으로 Rock, Jazz, City Pop 등 다양한 장르의 음악을 그들만의 스타일로 녹여내고 있는 데이브레이크. 2007년 데뷔 앨범 [Urban Life Style]로 활동하며 ‘좋다’, ‘들었다 놨다’등의 대표곡들로 주목받으며 연이은 단독 공연 매진, 페스티벌과 행사 섭외 1순위 밴드로 자리매김했다. 이후 KBS ‘불후의 명곡’과 Mnet ‘밴드의 시대’에서 우승을 차지하였고, 보컬 이원석은 MBC ‘복면가왕’에서 5연승 가왕에 등극하며 안방극장 접수에도 성공했다. 정규 4집 [WITH]의 타이틀곡 ‘꽃길만 걷게 해줄게’로 전국에 꽃길 열풍을 몰고 오며 문재인 정부 출범 100일 기념 대국민 보고대회로 청와대에 입성 후 ‘국민밴드’로 거듭난 그들은 ‘Beautiful Mint Life 2018’ 최고의 아티스트 선정, 유튜브의 신 ‘대도서관’과의 컬래버레이션 등 다양한 활동을 보여주고 있다.",
+      "facebook": "facebook.com/BandDaybreak",
+      "instagram": "instagram.com/band_daybreak"
     },
     {
-      "url": "../img/lineup/motte_official.jpg"
+      "url": "../img/lineup/motte_official.jpg",
+      "name": "모트(Motte)",
+      "text": "무심한 듯 툭툭 내뱉는 듯한 가사, 20대 초반의 서툰 연애와 지나간 순간에 대한 그리움을 노래하는 인디계의 아이돌 모트는 다양한 장르를 소화하며, 그 속에서 본인만의 노래 스타일을 유지한다. 2017년 9월 데뷔 싱글 발매 이후 꾸준히 음원을 발표했고, 웹드라마 ‘에이틴’ OST ‘도망가지마’로 큰 사랑을 받았으며, 2018년 10월에는 첫 번째 정규 앨범인 [사이]를 발표해 그동안의 이야기들을 하나로 모아 들려주며 본격적인 행보를 예고했다.",
+      "facebook": "facebook.com/mottemu",
+      "instagram": "instagram.com/motte_mu"
     },
     {
-      "url": "../img/lineup/soran_official.jpg"
+      "url": "../img/lineup/soran_official.jpg",
+      "name": "SORAN(소란)",
+      "text": "고급스럽고 감성적인 팝, 모던록을 추구하는 4인조 밴드 소란은 세밀하고 사랑스러운 소란식 가사와 다양한 장르를 넘나드는 사운드를 더해 위로와 위트가 공존하는 일상을 노래하는 소란식 팝으로 많은 공감을 얻으며 사랑받고 있다. 다채로운 단독 콘서트를 통해 꾸준히 쌓아 올린 명성과 연이은 매진으로 소란은 씬을 이끌어나가는 사계절 매진 밴드이자 믿고 보는 소란임을 공고히 하고 있다. 뿐만 아니라 최근 국내 정상급 페스티벌 50회 이상 출연이라는 수치가 증명하는 페스티벌 섭외 0순위 밴드 소란은 수많은 팬들이 입덕 계기로 손꼽을 만큼 압도적인 무대 장악력과 폭발적인 퍼포먼스로 페스티벌의 왕자다운 매력을 여실히 보여준다. 이외에도 보컬 고영배의 피처링 및 OST 참여, 기타 이태욱이 BTS, 박정현 등 장르를 넘나들며 다양한 아티스트 음반에 참여하는 등 한국의 대중음악 씬에서 빠질 수 없는 중요한 위치에 있다. 특히 라디오계의 유재석이라 불려온 고영배는 이제 라디오를 넘어 지상파 3사의 대표 프로그램을 섭렵하고 KBS 올댓뮤직의 MC로 활약하는 등 유쾌한 웃음을 선사하는 차세대 예능인이자 MC로 다양한 방송에서 주목받고 있다.",
+      "facebook": "www.facebook.com/bandsoran",
+      "instagram": "www.instagram.com/band_soran"
     },
     {
-      "url": "../img/lineup/standingegg-db.jpg"
+      "url": "../img/lineup/standingegg-db.jpg",
+      "name": "STANDING EGG(스탠딩 에그)",
+      "text": "에그 1호(작곡), 2호(작곡, 보컬), 3호(작사)로 구성된 어쿠스틱 프로듀싱 유닛이다. 팀의 유명세보다는 그들이 추구하는 음악 자체로 인정받고 싶다는 취지에서 신비주의 콘셉트를 고수해왔으나, 최근 보컬을 겸하고 있는 에그 2호는 모습을 드러내고 무대에도 서고 있다. 달콤하고 편안한 어쿠스틱 사운드를 기반으로 발라드, 포크, 락, R&B, 재즈에 이르기까지 폭넓은 음악을 선보이며 대중적이지만 결코 가볍지 않은 음악으로 씬을 대표하는 아티스트로 자리잡았다. 2010년 데뷔 이래로 140곡이 넘는 음원을 발매하며 꾸준하고 힘있게 활동을 이어오고 있는 스탠딩 에그는 단독 공연을 포함, 여러 페스티벌 무대에서 관객들을 만나고 있다.",
+      "facebook": "facebook.com/standingEGG.page",
+      "instagram": "instagram.com/standingegg"
     },
     {
-      "url": "../img/lineup/ericnam_artistcb.jpg"
+      "url": "../img/lineup/ericnam_artistcb.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/Nflying_official.jpg"
+      "url": "../img/lineup/Nflying_official.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/WH3N_official.jpg"
+      "url": "../img/lineup/WH3N_official.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/YDD_official.jpg"
+      "url": "../img/lineup/YDD_official.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/younha_official-1.jpg"
+      "url": "../img/lineup/younha_official-1.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/jangbeomjune_official.jpg"
+      "url": "../img/lineup/jangbeomjune_official.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/0907_zitten_main.jpg"
+      "url": "../img/lineup/0907_zitten_main.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/choinakta_official.jpg"
+      "url": "../img/lineup/choinakta_official.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/ChoiYeGeun.jpg"
+      "url": "../img/lineup/ChoiYeGeun.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     }
   ],
   "second": [
     {
-      "url": "../img/lineup/autumnvacation.jpg"
+      "url": "../img/lineup/autumnvacation.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/mmt_official.jpg"
+      "url": "../img/lineup/mmt_official.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/kimsuyoung_official.jpg"
+      "url": "../img/lineup/kimsuyoung_official.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/martinsmith_official.jpg"
+      "url": "../img/lineup/martinsmith_official.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/BOL4_official.jpg"
+      "url": "../img/lineup/BOL4_official.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/SURL_official.jpg"
+      "url": "../img/lineup/SURL_official.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/Thornapple_official.jpg"
+      "url": "../img/lineup/Thornapple_official.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/owhen_official.jpg"
+      "url": "../img/lineup/owhen_official.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/zairo_official-1.jpg"
+      "url": "../img/lineup/zairo_official-1.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/JUNG-SEUNGHWAN.jpg"
+      "url": "../img/lineup/JUNG-SEUNGHWAN.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/JUNGJOONIL_official.jpg"
+      "url": "../img/lineup/JUNGJOONIL_official.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/jooyoung_official.jpg"
+      "url": "../img/lineup/jooyoung_official.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/pptz.jpg"
+      "url": "../img/lineup/pptz.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/paulkim.jpg"
+      "url": "../img/lineup/paulkim.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/isaachong_artistdb.jpg"
+      "url": "../img/lineup/isaachong_artistdb.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     },
     {
-      "url": "../img/lineup/HYNN_artist_db.jpg"
+      "url": "../img/lineup/HYNN_artist_db.jpg",
+      "name": "",
+      "text": "",
+      "facebook": "",
+      "instagram": ""
     }
   ]
 }

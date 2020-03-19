@@ -10,6 +10,7 @@ header{
     background-attachment: fixed;
 }
 header .top{
+    height: 600px;
     background: rgba(0,0,0,.5);
 }
 header .top nav{
@@ -40,7 +41,7 @@ header .top nav a:after{
     opacity: 0;
     transition: .5s;
 }
-header .top nav a:nth-of-type(5):after{
+header .top nav a:nth-of-type(6):after{
     width: 100%;
     opacity: 1;
 }
@@ -64,7 +65,7 @@ header .top .title{
     width: 933px; 
     margin:0 auto;
     color: #fff;
-    padding: 100px 0;
+    padding: 160px 0;
     text-align: center;
 }
 header .top .title h2{

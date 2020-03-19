@@ -10,6 +10,7 @@ header{
     background-attachment: fixed;
 }
 header .top{
+    height: 600px;
     background: rgba(0,0,0,.5);
 }
 header .top nav{
@@ -40,7 +41,7 @@ header .top nav a:after{
     opacity: 0;
     transition: .5s;
 }
-header .top nav a:first-child:after{
+header .top nav a:nth-of-type(2):after{
     width: 100%;
     opacity: 1;
 }
@@ -64,7 +65,7 @@ header .top .title{
     width: 933px; 
     margin:0 auto;
     color: #fff;
-    padding: 100px 0;
+    padding: 160px 0;
     text-align: center;
 }
 header .top .title h2{
@@ -181,6 +182,7 @@ section article{
     margin: 0 auto;
 }
 section article h3{
+    opacity: 0;
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 150px;
@@ -189,6 +191,7 @@ section article h3{
     visibility: visible;
 }
 section article p {
+    opacity: 0;
     font-size:1rem;
     line-height: 2rem;
     margin-top: 150px;
@@ -198,26 +201,23 @@ section article p {
     visibility: visible;
 }
 section article h3.active{
-    animation: scrollani 1s forwards;
+    animation: scrollani 2s forwards;
 }
 section article p.active{
-    animation: scrollani 1s forwards;
+    animation: scrollani 2s forwards;
 }
 @keyframes scrollani{
     0%{
-        visibility: visible;
         margin-top: 150px;
     }
     20%{
-        visibility: visible;
         margin-top: -8px;
     }
     40%{
-        visibility: visible;
         margin-top: 8px;
     }
     100%{
-        visibility: visible;
+        opacity: 1;
         margin-top: 0;
     }
 }
