@@ -20,7 +20,6 @@ window.addEventListener('load', function () {
                 content_first.style.opacity = 0;
             })
         })
-
     }
     // wrapper_second[i].addEventListener('mouseleave', function (e) {
     //     content_second.style.opacity = 0;
@@ -42,4 +41,3 @@ window.addEventListener('load', function () {
 
     }
 });
-//json이용해서 할것

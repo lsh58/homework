@@ -1,55 +1,41 @@
+window.addEventListener('load', function () {
 
-var ticket_nav = document.querySelectorAll('.ticket_nav a');
-for (var i = 0; i < ticket_nav.length; i++) {
-    ticket_nav[i].addEventListener('click', function (e) {
-        e.preventDefault();
-        for (var j = 0; j < ticket_nav.length; j++) {
-            ticket_nav[j].classList.remove('active');
-        }
-        this.className = 'active';
-    })
-}
+    var thumbnail = document.querySelectorAll('.img_wrapper a');
+    var spanAll = document.querySelectorAll('.img_wrapper a span');
+    var extend = document.querySelector('.extended');
+    var extendimg = extend.querySelector('img');
+    var lasturl;
+    // console.log(spanAll);
+    for (let k = 0; k < thumbnail.length; k++) {
+        thumbnail[k].addEventListener('click', function (e) {
+            e.preventDefault();
+            for (var i = 0; i < spanAll.length; i++) {
+                spanAll[i].style.display = 'none';
+            }
+            var span = this.childNodes;
+            span[0].style.display = 'block';
+            var url = this.style.backgroundImage;
+            console.log(lasturl);
+            if (url == lasturl) {
+                extend.style.display = 'none';
+                span[0].style.display = 'none';
+                url = null;
+            }
+            else {
+                extend.style.display = 'flex';
+                console.log(url.split('"')[1]);
+            }
+            lasturl = url;
 
 
-function getCurrentScrollPercentage() {
-    return (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
-}
+            console.log(k);
+            // console.log(this.style.backgroundImage);
 
-var li = document.querySelectorAll('li');
-var ul = document.querySelector('ul');
-
-window.addEventListener("scroll", function () {
-    var scrollY = getCurrentScrollPercentage();
-    console.log(scrollY);
-    if (scrollY <= 5) {
-        for (var i = 0; i < li.length; i++) {
-            li[i].classList.remove('active');
-            ul.classList.remove('active');
-        }
-    }
-    if (scrollY >= 6) {
-        ul.classList.add('active');
-        li[0].classList.add("active");
-        li[1].classList.add("active");
-    }
-    if (scrollY >= 10) {
-        li[2].classList.add("active");
-        li[3].classList.add("active");
-    }
-    if (scrollY >= 13) {
-        li[4].classList.add("active");
-        li[5].classList.add("active");
-    }
-    if (scrollY >= 22) {
-        li[6].classList.add("active");
-        li[7].classList.add("active");
-    }
-    if (scrollY >= 30) {
-        li[8].classList.add("active");
-        li[9].classList.add("active");
-    }
-    if (scrollY >= 43) {
-        li[10].classList.add("active");
-        li[11].classList.add("active");
+            // if (extend.style.display == 'flex') {
+            //     
+            // } else {
+            //     
+            // }
+        })
     }
 });

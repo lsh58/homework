@@ -22,7 +22,6 @@ xhr.onload = function () {                       // When readystate changes
 
   var wrapper = document.querySelectorAll('.img-wrapper');
   var wrapper_first = wrapper[0].querySelectorAll('.img-sub a');
-  var content_first = wrapper[0].querySelector('.img-main .content');
   var h3_first = wrapper[0].querySelector('.img-main .content #h3_f');
   var text_first = wrapper[0].querySelector('.img-main .content #text_f');
   var fb_first = wrapper[0].querySelector('.img-main .content #fb_f');
@@ -48,7 +47,6 @@ xhr.onload = function () {                       // When readystate changes
   document.getElementById('second').innerHTML = secondContent;
 
   var wrapper_second = wrapper[1].querySelectorAll('.img-sub a');
-  var content_second = wrapper[1].querySelector('.img-main .content');
   var h3_second = wrapper[1].querySelector('.img-main .content #h3_s');
   var text_second = wrapper[1].querySelector('.img-main .content #text_s');
   var fb_second = wrapper[1].querySelector('.img-main .content #fb_s');
