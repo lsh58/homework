@@ -343,7 +343,7 @@ section .img-wrapper .img-sub::-webkit-scrollbar{
     display: none;
 }
 section .img-wrapper .img-sub a{
-    width: 49%;
+    width: 47%;
     border-radius: 10px;
     margin-left: 3px;
     margin-top: 3px;
