@@ -96,7 +96,7 @@ header .top strong{
     width: 47px; height: 47px;
     margin: -24px auto;
     position: absolute;
-    left: 50%;
+    left:50%;
     transform: translateX(-50%);
     z-index: 4;
     display: flex;
@@ -137,134 +137,151 @@ header .top strong{
 /* header-end */
 
 /* section */
-
-section .ticket_link{
-    width: 933px;
-    margin: 100px auto 30px;
+section{
+    position: relative;
+}
+section .ticket_nav{
+    width: 600px;
+    margin: 130px auto 70px;
     display: flex;
-    justify-content: space-around;
-    background: linear-gradient(90deg, rgb(237, 47, 86), rgb(246, 116, 119));
-    text-align: center;
-    padding: 15px 0;
+    justify-content: center;
 }
-section .ticket_link a{
-    width: 311px;
-    line-height: 40px;
-    color:#fff;
-    font-size: 1.6rem;
+section .ticket_nav a{
+    line-height: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.3rem;
     font-weight: 600;
-    border-left: 1px solid rgba(255,255,255,0.4);
-    border-right: 1px solid rgba(0,0,0,.4);
+    text-align: center;
+    padding: 0 80px;
+    border-left: 1px solid rgba(0,0,0,.4);
+    border-right: 1px solid rgba(0,0,0,.1);
 }
-section .ticket_link a:first-child{
+section .ticket_nav a:first-child{
     border-left: none;
 }
-section .ticket_link a:last-child{
+section .ticket_nav a:last-child{
+    border-right: none;
+}
+section .main_content01{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+section .main_content01 .content{
+    width: 100%;
+    padding-top: 10px;
+}
+section .main_content01 .content .title{
+    width: 100%;
+    margin: 30px auto;
+}
+section .main_content01 .content .title h3{
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+section .main_content01 .content .title p{
+    text-align: center;
+    padding:10px 0;
+    line-height: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+section .main_content01 .content .ticket_link{
+    width: 50%;
+    padding: 15px 0;
+    margin: 50px auto 80px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgb(237, 47, 86), rgb(246, 116, 119));
+}
+section .main_content01 .content .ticket_link a{
+    text-align: center;
+    line-height: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 3px 50px;
+    position: relative;
+    border-left: 1px solid rgba(0,0,0,.3);
+    border-right: 1px solid rgba(255,255,255,.3);
+}
+section .main_content01 .content .ticket_link a:first-child{ 
+    border-left: none;
+}
+section .main_content01 .content .ticket_link a:last-child{ 
     border-right: none;
 }
 
-section article{
-    width: 903px;
-    margin:50px auto;
-    position: relative;
+section .main_content01 .content ul{
+    margin: 0 auto;
 }
-section article .frame{
-    width: 933px;
-    height: 100%;
-    padding: 20px 0;
-    position: absolute;
-    left: 50%; top:50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    background: #eee;
-    box-shadow: rgba(0,0,0,.2) 3px 3px 5px 0px,rgba(0,0,0,.2) -3px -3px 5px 0px;
-}
-section article h2{
-    font-size: 1.8rem;
-    font-weight: bold;
-    background: #eee;
-    padding: 17px 20px;
-    border-top: 2px solid #111;
-    border-bottom: 2px solid #111;
-}
-section article h2:before{
-    content:'Notice';
-    color:#f14e65;
-    padding-right: 30px;
-}
-
-section article .ticket01{
-    width: 100%;
-    background:#4075c5;
-    overflow: hidden;
-    margin-top:10px;
-    padding-bottom: 30px;
-}
-section article div img{
-    width: 70%;
-    float: left;
-    padding: 20px 140px;
-}
-section article div .point{
-    float: left;
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-}
-section article .ticket01 .point strong{
-    font-weight: 550;
-    font-size: 1.2rem;
-    color: #fff;
-    line-height: 2rem;
-}
-section article .ticket01 .point p{
-    display: inline;
-    font-weight: lighter;
-    font-size: 1.1rem;
-    color: #fff;
-    padding:0 10px;
-}
-section article .ticket01 .point .detail{
-    width: 90%;
-    font-size: 0.9rem;
-    margin-top: 10px;
-    line-height: 1.6rem;
-}
-section article .ticket02{
-    width: 100%;
-    background:#ffeee7;
-    overflow: hidden;
-    padding-bottom: 30px;
-}
-section article .ticket02 .notice{
-    padding-top:  20px;
+section .main_content01 .content ul li{
+    padding:18px 0 0;
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 150px;
+}
+section .main_content01 .content ul li:nth-of-type(2n){
+    padding:5px 0 20px;
+}
+section .main_content01 .content ul li strong{
+    text-align: center;
+    line-height: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+section .main_content01 .content ul li em{
+    text-align: center;
+    line-height: 2rem;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 1rem;
-    line-height: 1.5rem;
+    font-weight: 500;
+    transition: lineheight .5s;
 }
-section article .ticket02 .point strong{
-    font-weight: 550;
-    font-size: 1.2rem;
+section .main_content01 .content ul li p{
+    text-align: center;
     line-height: 2rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: lineheight .5s;
+    word-break: keep-all;
 }
-section article .ticket02 .point p{
-    display: inline;
-    font-weight: lighter;
-    font-size: 1.1rem;
-    padding:0 10px;
+section .main_content01 .content ul li:last-child{
+    width: 60%;
 }
-section article .ticket02 .point .detail{
-    width: 90%;
-    font-size: 0.9rem;
-    margin-top: 10px;
-    line-height: 1.6rem;
+section .main_content01 .content ul li.active{
+    animation: scrollani 1s forwards;
 }
-/* section article p {
-    font-size:1rem;
-    line-height: 2rem;
-    margin-bottom: 40px;
-} */
+@keyframes scrollani{
+    0%{
+        visibility: visible;
+        margin-top: 150px;
+    }
+    20%{
+        visibility: visible;
+        margin-top: -8px;
+    }
+    40%{
+        visibility: visible;
+        margin-top: 8px;
+    }
+    100%{
+        visibility: visible;
+        margin-top: 0;
+    }
+}
 /* section-end */
 
 /* footer */

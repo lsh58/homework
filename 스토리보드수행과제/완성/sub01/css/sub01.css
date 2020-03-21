@@ -168,6 +168,14 @@ section .logo img{
     width: 198px;
     height: 41px;
 }
+section .image{
+    margin: 0 auto;
+    width: 60%;
+    height: 400px;
+    background: url("../img/backimg_01.jpg") no-repeat center/ cover;
+    /* background-attachment: fixed; */
+    margin-bottom: 100px;
+}
 section article{
     width: 933px;
     margin: 0 auto;
@@ -175,12 +183,43 @@ section article{
 section article h3{
     font-size: 1.5rem;
     font-weight: bold;
+    margin-top: 150px;
     margin-bottom: 20px;
+    text-align: center;
+    visibility: visible;
 }
 section article p {
     font-size:1rem;
     line-height: 2rem;
+    margin-top: 150px;
     margin-bottom: 40px;
+    text-align: center;
+    word-break: keep-all;
+    visibility: visible;
+}
+section article h3.active{
+    animation: scrollani 1s forwards;
+}
+section article p.active{
+    animation: scrollani 1s forwards;
+}
+@keyframes scrollani{
+    0%{
+        visibility: visible;
+        margin-top: 150px;
+    }
+    20%{
+        visibility: visible;
+        margin-top: -8px;
+    }
+    40%{
+        visibility: visible;
+        margin-top: 8px;
+    }
+    100%{
+        visibility: visible;
+        margin-top: 0;
+    }
 }
 /* section-end */
 
